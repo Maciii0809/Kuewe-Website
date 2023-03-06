@@ -111,9 +111,9 @@ nav img {
 @media (max-width: 1000px){
     .welcome {
        font-size: 55px;
-       left: 80%;
+       left: 100%;
        top: 30%;
-        width: 100vh;
+       
     }
 }
 
