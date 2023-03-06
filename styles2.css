@@ -6,6 +6,10 @@
 html{
     width: 100vh;
 }
+
+@media (max-width:1000px){
+    html{
+        width:100vh}}
 body {
     height: 1600px;
     width: 100%;
@@ -109,6 +113,7 @@ nav img {
        font-size: 55px;
        left: 80%;
        top: 30%;
+        width: 100vh;
     }
 }
 
