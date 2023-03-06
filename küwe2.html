@@ -79,8 +79,9 @@
                 
             </div>
         </div>
-        <div class="container-unten">
-            <h1 >KONTAKTIERE UNS DIREKT</h1>
+       <div class="container-unten">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h1 >KONTAKTIERE UNS DIREKT</h1>
             <div class="details-zeile">
                 <p>Name<br><input type="text"></p>
                 <p>Email<br><input type="text"></p>
@@ -91,6 +92,8 @@
             <div class="senden">
                 <button style="margin-top: -73px;">Absenden</button>
             </div>
+            </form>
+
         </div>
     </div>
 </section>
@@ -176,7 +179,22 @@ init()
 
 
 </script>
-
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+        Host : "smtp.gmail.com",
+        Username : "marcel.golfier@googlemail.com",
+        Password : Marina26021996,
+        To : 'mar.golf@web.de',
+        From : document.getElementById("email").value,
+        Subject : "Neue Nachricht über Homepage",
+        Body : "And this is the body"
+    }).then(
+    message => alert(message)
+    );
+    }
+</script>
 
 </body>
 
