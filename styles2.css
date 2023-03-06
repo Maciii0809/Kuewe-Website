@@ -6,10 +6,6 @@
 html{
     width: 100vh;
 }
-
-@media (max-width:1000px){
-    html{
-        width:100vh}}
 body {
     height: 1600px;
     width: 100%;
@@ -21,9 +17,9 @@ body {
 .welcome{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 53%;
     color: rgb(207, 207, 207);
-    font-size: 70px;
+    font-size: 60px;
     transform: translate(-50%, 50%);
     white-space: nowrap;
     
@@ -71,12 +67,13 @@ nav {
 nav img {
     width: 100px;
     z-index: 1;
-    padding-left: 20px;
+    padding-left: 250px;
 }
 
 .nav-links {
     flex: 1;
     text-align: right;
+    padding-right: 200px;
     
 }
 
@@ -111,9 +108,8 @@ nav img {
 @media (max-width: 1000px){
     .welcome {
        font-size: 55px;
-       left: 100%;
+       left: 59%;
        top: 30%;
-       
     }
 }
 
@@ -163,11 +159,11 @@ nav img {
 .testimonial-content {
     width: 100%;
     height: 370px;
-    top: 120%;
+    top: 110%;
     position: absolute;
     display: flex;
     z-index: 2;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     color: hsl(0, 0%, 81%);
     background-color: rgb(2, 5, 22, .97)
@@ -184,10 +180,13 @@ nav img {
     border-color: rgb(207, 207, 207);
     border-radius: 125px;
 
+
 }
 
 .andre-text {
-    position: relative
+    position: relative;
+    margin-left: 80px;
+    
 }
 
 .andre-text p {
@@ -217,14 +216,14 @@ nav img {
 
 @media only screen and (max-width: 1000px) {
     .andre-bild img{
-        width: 150px;
+        width: 130px;
         margin-left: 0px;
         
     }
 }
 @media only screen and (max-width: 1000px){
     .andre-text p{
-        font-size: 16px;
+        font-size: 10px;
         margin-right: 30px;
         
     }
@@ -420,7 +419,7 @@ nav img {
 
 @media only screen and (max-width:1000px){
     .container-kontakt {
-        left: 6%;
+        left: 33%;
     }
 }
 
