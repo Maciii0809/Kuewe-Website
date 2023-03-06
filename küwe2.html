@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=600px">
+    <meta name="viewport" content="width=1000px">
     <title>Küwe - Wine & Events</title>
     <link rel="stylesheet" href="styles2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="küwe2.js"></script>
+    <script src="/Küwe Website/küwe2 Website/küwe2.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
@@ -18,7 +18,7 @@
 <section class="header">
    <div id="navbar">
     <nav>
-        <a href="https://maciii0809.github.io/Kuewe-Website/küwe2.html"><img src="Vektor+Weiß+(002)richtig.png"></a>
+        <a href="https://maciii0809.github.io/Kuewe-Website/ku%CC%88we2.html"><img src="Vektor+Weiß+(002)richtig.png"></a>
         <div class="nav-links">
             <ul>
                 <li><a href="">Shop</a></li>
@@ -41,10 +41,10 @@
             <img src="IMG_4079.jpeg">
         </div>
         <div class="andre-text">
-             <div class="linkes-zeichen"><img src="icons8-anführungszeichen-unten-(links)-50.png"></div>
+             <div class="linkes-zeichen"><img src="icons8-anführungszeichen-unten-(links)-50.png"></div>
             <p>Willkommen im KÜWE!<br> Unsere erlesenen Weine aus der Pfalz und der breiten Welt<br> verführen Sie zu einem Geschmackserlebnis, das Lust auf<br> mehr macht! Egal ob Sie auf der Suche nach einem speziellen <br>Wein oder einer Eventlocation sind, wir bieten Ihnen eine einmalige <br>Mischung aus Genuss und Stil im Herzen der Pfalz!</p>
             <p class="autor"><i>Andre - Winzer & Oenologe</i></p>
-            <div class="rechtes-zeichen"><img src="icons8-anführungszeichen-oben-(rechts)-50.png"></div>
+            <div class="rechtes-zeichen"><img src="icons8-anführungszeichen-oben-(rechts)-50.png"></div>
         </div>
     </div>
 </section>
@@ -79,18 +79,17 @@
                 
             </div>
         </div>
-       <div class="container-unten">
+        <div class="container-unten">
             <form onsubmit="sendEmail(); reset(); return false;">
                 <h1 >KONTAKTIERE UNS DIREKT</h1>
             <div class="details-zeile">
-                <p>Name<br><input type="text"></p>
-                <p>Email<br><input type="text"></p>
-                <p>Telefon<br><input type="text"></p>
+                <p>Name<br><input type="text" id="name" required></p>
+                <p>Email<br><input type="email" id="email" required></p>
+                <p>Telefon<br><input type="text" id="phone" required></p>
             </div>
-            <div class="nachricht-zeile">Deine Nachricht<br><input 
-                type="text"></div>
+            <div class="nachricht-zeile">Deine Nachricht<br><textarea id="message"></textarea></div>
             <div class="senden">
-                <button style="margin-top: -73px;">Absenden</button>
+                <button style="margin-top: -73px;" type="submit">Absenden</button>
             </div>
             </form>
 
@@ -164,37 +163,28 @@ customElements.define('type-async', TypeAsync, { extends: 'span' })
 init()
 
 
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-      } else {
-        document.getElementById("navbar").style.top = "-20vh";
-      }
-      prevScrollpos = currentScrollPos;
-    }
-    
-
-
 
 </script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
     function sendEmail(){
         Email.send({
-        Host : "smtp.gmail.com",
-        Username : "marcel.golfier@googlemail.com",
-        Password : "Marina26021996",
+        Host : "smtp.elasticemail.com",
+        Username : "mar.golf@web.de",
+        Password : "D321606BCCF2CF53FB46DF71E20E3BDC8890",
         To : 'mar.golf@web.de',
         From : document.getElementById("email").value,
         Subject : "Neue Nachricht über Homepage",
-        Body : "And this is the body"
+        Body : "Name " + document.getElementById("name").value
+        + "<br> Email: " + document.getElementById("email").value
+        + "<br> Telefonnummer: " + document.getElementById("phone").value
+        + "<br> Nachricht: " + document.getElementById("message").value
     }).then(
-    message => alert(message)
+    message => alert("Nachricht erfolgreich versendet")
     );
     }
 </script>
+
 
 </body>
 
