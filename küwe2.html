@@ -125,10 +125,29 @@ node.innerText = ""
 
 while (true) {
 await node.type('Herzlich Willkommen im Küwe!')
-await sleep(1500)
+await sleep(2000)
 await node.delete('Herzlich Willkommen im Küwe!')
-await sleep (1500)
-
+await sleep (1000)
+await node.type('Du magst Wein?')
+await sleep(2000)
+await node.delete('Wein?')
+await sleep (1000)
+await node.type('nette Gesellschaft?')
+await sleep(2000)
+await node.delete('Du magst nette Gesellschaft?')
+await sleep (1000)
+await node.type('Dann bist du hier genau richtig!')
+await sleep(2000)
+await node.delete('Dann bist du hier genau richtig!')
+await sleep(1000)
+await node.type('Schau dich um oder ruf uns an')
+await sleep(2000)
+await node.delete('Schau dich um oder ruf uns an')
+await sleep(1000)
+await node.type('wir helfen dir gerne weiter!')
+await sleep(2000)
+await node.delete('wir helfen dir gerne weiter!')
+await sleep(1000)
 }
 }
 // Source code 🚩
