@@ -23,7 +23,6 @@ body {
     transform: translate(-50%, 50%);
     white-space: nowrap;
     
-    
 }
 
 .blinking-cursor {
@@ -104,7 +103,7 @@ nav img {
 }
 
 
-@media (max-width: 700px){
+@media only screen and (max-width: 600px){
     .welcome {
        font-size: 55px;
        left: 85%;
@@ -113,12 +112,12 @@ nav img {
 }
 
 
-@media (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     .nav-links ul {
         width: 80vh;
     }
 }
-@media (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     .nav-links ul li {
         list-style: none;
         display: inline-block;
@@ -127,24 +126,24 @@ nav img {
     }
 }
 
-@media (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     .nav-links ul li a {
         font-size: 20px;
     }
 }
 
-@media (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     nav {
         padding: 2% 7%;
     }
 }
-@media (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     nav img {
         width: 80px;
     }
 }
 
-@media (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     #navbar {
         height: 12vh;
     }
@@ -190,6 +189,14 @@ nav img {
 .andre-text p {
     font-size: 18px;
 }
+.autor{
+    text-align: right;
+    margin-top: 5px;
+}
+.andre-text p i{
+    font-size: 14px;
+    
+}
 
 .linkes-zeichen {
     position: absolute;
@@ -202,14 +209,14 @@ nav img {
     right: -62px;
     bottom: -30px;
 }
-@media (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     .testimonial{
         width: 100vh;
         height: 200px;
             
     }
 }
-@media (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     .testimonial-content{
         width: 100vh;
         height: 170px;
@@ -217,14 +224,14 @@ nav img {
         top:80%;    
     }
 }
-@media (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     .andre-bild img{
         width: 100px;
         margin-left: 50px;
         
     }
 }
-@media (max-width: 700px) {
+@media only screen and (max-width: 600px){
     .andre-text p{
         font-size: 10px;
         margin-right: 30px;
