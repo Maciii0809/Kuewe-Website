@@ -104,21 +104,21 @@ nav img {
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 1000px){
     .welcome {
        font-size: 55px;
-       left: 99%;
+       left: 59%;
        top: 30%;
     }
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .nav-links ul {
         width: 60vh;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .nav-links ul li {
         list-style: none;
         display: inline-block;
@@ -127,24 +127,24 @@ nav img {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .nav-links ul li a {
         font-size: 20px;
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     nav {
         padding: 2% 18%;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     nav img {
         width: 80px;
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     #navbar {
         height: 12vh;
     }
@@ -210,21 +210,21 @@ nav img {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .andre-bild img{
-        width: 100px;
+        width: 130px;
         margin-left: 0px;
         
     }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
     .andre-text p{
         font-size: 10px;
         margin-right: 30px;
         
     }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
     .testimonial-content{
         width: 100vh;
         top: 80%
@@ -406,9 +406,9 @@ nav img {
     color: rgb(207, 207, 207);
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:1000px){
     .container-kontakt {
-        left: 04%;
+        left: 2%;
     }
 }
 
@@ -462,7 +462,7 @@ nav img {
     z-index: 3;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:1000px){
     .footer-container{
         width: 100vh;
     }
