@@ -42,7 +42,7 @@ body {
 
 
 .header {
-    min-height: 100vh;
+    min-height: 100svh;
     width: 100%;
 
 }
@@ -395,7 +395,7 @@ nav img:hover{
     display: none;
 }
 
-@media (max-width: 600px)  {
+@media (max-width: 400px)  {
     #navbar i{
         display: block;
         color: #cfcfcf;
@@ -427,6 +427,9 @@ nav img:hover{
     .nav-links ul li a{
         font-size: 8px;
         transition: ease 0.3s;
+    }
+    nav{
+        padding: .5rem 3rem;
     }
     nav img{
         width: 50px;
@@ -461,7 +464,7 @@ nav img:hover{
     }
 }
 
-@media (min-width: 600.02px) and (max-width: 1000px){
+@media (min-width: 400.02px) and (max-width: 1000px){
     .nav-links ul li a{
         font-size: 14px;
         transition: ease 0.3s;
