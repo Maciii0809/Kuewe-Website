@@ -1,120 +1,57 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=600px">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <title>Küwe - Wine & Events</title>
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles-index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="/Küwe Website/küwe2 Website/küwe2.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
 <body>
 <section class="header">
    <div id="navbar">
-    <nav>
-        <a href="https://maciii0809.github.io/Kuewe-Website/ku%CC%88we2.html"><img src="Vektor+Weiß+(002)richtig.png"></a>
-        <div class="nav-links">
-            <ul>
-                <li><a href="">Shop</a></li>
-                <li><a href="">Events</a></li>
-                <li><a href="">Unser Team</a></li>
-                <li><a href="gallery.html">Galerie</a></li>
-                <li><a href="">Kontakt</a></li>
-            </ul>
-        </div>
-    </nav>
+        <nav>
+            <a href="küwe2.html"><img src="Vektor+Weiß+(002)richtig.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Unser Team</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
    </div> 
    <div class="welcome">
     <span is="type-async" id="type-text">...</span>
     <span class="blinking-cursor">_</span>
 </div>
-</section>
-<section class="testimonial">
-    <div class="testimonial-content">
-        <div class="andre-bild">
+   </section>
+   <section>
+    <div class="vorstellung-container">
+        <div class="bild-container">
             <img src="IMG_4079.jpeg">
+        </div>  
+        <div class="text-container">
+            <h1>
+                Herzlich Willkommen im Küwe!
+            </h1>
+            <p>Unsere erlesenen Weine aus der Pfalz und dem Rest der Welt verführen Dich zu einem Geschmackserlebnis, das Lust auf mehr macht! Egal ob Du auf der Suche nach einem speziellen Wein oder einer Eventlocation bist, wir bieten Dir eine einmalige Mischung aus Genuss und Stil im Herzen der Pfalz!</p>
+            
+            <p class="autor"><i>Andre - Winzer & Önologe</i></p>
+            
         </div>
-        <div class="andre-text">
-             <div class="linkes-zeichen"><img src="icons8-anführungszeichen-unten-(links)-50.png"></div>
-            <p>Willkommen im KÜWE!<br> Unsere erlesenen Weine aus der Pfalz und dem Rest der Welt<br> verführen Dich zu einem Geschmackserlebnis, das Lust auf<br> mehr macht! Egal ob Du auf der Suche nach einem speziellen <br>Wein oder einer Eventlocation bist, wir bieten Dir eine einmalige <br>Mischung aus Genuss und Stil im Herzen der Pfalz!</p>
-            <p class="autor"><i>Andre - Winzer & Oenologe</i></p>
-            <div class="rechtes-zeichen"><img src="icons8-anführungszeichen-oben-(rechts)-50.png"></div>
-        </div>
-    </div>
-</section>
-<section class="Kontaktformular">
-    <div class="container-kontakt">
-        <div class="container-oben">
-            <div class="inhalt-oben" style="margin-right: 20px;">
-                <div><img
-                        src="icons8-lautstärke-des-klingeltons-50 Kopie.png"></div>
-                <h1>Ruf uns an</h1>
-                <p>Wir sind im Rahmen unserer Öffnungszeiten telefonisch zu erreichen</p>
-                <li>
-                    <button onclick="window.open('tel:062326848482')">06232 / 684 84 82</button>
-                </li>
-            </div>
-            <div class="inhalt-oben" style="margin-right: 10px; margin-left: 10px;">
-                <div><img src="icons8-mail-verfassen-50 Kopie.png"></div>
-                <h1>Schreib eine Mail</h1>
-                <p>Jegliche Anfragen und Informationen können auch per E-Mail angefragt werden</p>
-                <li style="margin-top: -24px;">
-                    <button onclick="window.location = 'mailto:info@kuewe.de';">info@kuewe.de</button>
-                </li>
-            </div>
-            <div class="inhalt-oben" style="margin-left: 20px;">
-                <div><img src="icons8-karten-stecknadel-50 Kopie.png"></div>
-                <h1>Komm vorbei</h1>
-                <p>Roßmarktstraße 1b<br>
-                67346 Speyer</p>
-                <li>
-                    <button onclick="window.open('https:goo.gl/maps/pvzQvY42rMu1ptsSA', '_blank');">View on Map</button>
-                </li>
-                
-            </div>
-        </div>
-        <div class="container-unten">
-            <form onsubmit="sendEmail(); reset(); return false;">
-                <h1 >KONTAKTIERE UNS DIREKT</h1>
-            <div class="details-zeile">
-                <p>Name<br><input type="text" id="name" required></p>
-                <p>Email<br><input type="email" id="email" required></p>
-                <p>Telefon<br><input type="text" id="phone" required></p>
-            </div>
-            <div class="nachricht-zeile">Deine Nachricht<br><textarea id="message"></textarea></div>
-            <div class="senden">
-                <button style="margin-top: -73px;" type="submit">Absenden</button>
-            </div>
-            </form>
-
-        </div>
-    </div>
-</section>
-<section class="footer">
-    <div class="footer-container">
-        <div class="footer-links"><img src="Vektor+Weiß+(002)richtig.png"></div>
-        <div class="footer-mitte">
-            <div style="font-size: 150%;"><u>Küwe GmbH</u></div>
-            <div>Home</div>
-            <div>Shop</div>
-            <div>Events</div>
-            <div>Unser Team</div>
-            <div>Galerie</div>
-            <div>Kontakt</div>
-        </div>
-        <div class="footer-rechts">
-        <img src="icons8-instagram-96.png">
-        <img src="icons8-facebook-96.png">
-        </div>
-  </div> 
-</section>
-<script>
+   </div>
+   </section>
+   <script>
     async function init () {
 const node = document.querySelector("#type-text")
 
@@ -130,9 +67,9 @@ await node.delete('Herzlich Willkommen im Küwe!')
 await sleep (1000)
 await node.type('Du magst Wein?')
 await sleep(2000)
-await node.delete('Du magst Wein?')
+await node.delete('Wein?')
 await sleep (1000)
-await node.type('Du magst nette Gesellschaft?')
+await node.type('nette Gesellschaft?')
 await sleep(2000)
 await node.delete('Du magst nette Gesellschaft?')
 await sleep (1000)
@@ -148,6 +85,8 @@ await node.type('wir helfen dir gerne weiter!')
 await sleep(2000)
 await node.delete('wir helfen dir gerne weiter!')
 await sleep(1000)
+
+
 }
 }
 // Source code 🚩
@@ -183,45 +122,6 @@ init()
 
 
 
-
-    
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-      } else {
-        document.getElementById("navbar").style.top = "-20vh";
-      }
-      prevScrollpos = currentScrollPos;
-    }
-    
-
-</script>
-
-
-
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-    function sendEmail(){
-        Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "mar.golf@web.de",
-        Password : "D321606BCCF2CF53FB46DF71E20E3BDC8890",
-        To : 'mar.golf@web.de',
-        From : document.getElementById("email").value,
-        Subject : "Neue Nachricht über Homepage",
-        Body : "Name " + document.getElementById("name").value
-        + "<br> Email: " + document.getElementById("email").value
-        + "<br> Telefonnummer: " + document.getElementById("phone").value
-        + "<br> Nachricht: " + document.getElementById("message").value
-    }).then(
-    message => alert("Nachricht erfolgreich versendet")
-    );
-    }
-</script>
-
-
-</body>
-
+</script>   
+</body>   
 </html>
