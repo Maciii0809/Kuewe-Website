@@ -4,16 +4,16 @@
     font-family: 'Poppins', sans-serif;
 }
 html{
-    height:100vh;
+    height: 100vh;
 }
-body {
-    
+.bg{
     background-image: linear-gradient(rgba(1,1,1,0.3), rgba(1,1,1,0.3)), url(IMG_3960.jpg);
-    background-attachment: fixed;
+    position: fixed;
     background-position: center;
     background-size: cover;
-    height:100%;
-    
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
 }
 .welcome{
     position: absolute;
@@ -41,7 +41,7 @@ body {
 
 
 .header {
-    min-height: 100vh;
+    min-height: 100svh;
     width: 100%;
 
 }
