@@ -3,26 +3,26 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-html{
-    width: 100vh;
-}
+
 body {
-    height: 1600px;
-    width: 100%;
+    
     background-image: linear-gradient(rgba(1,1,1,0.3), rgba(1,1,1,0.3)), url(IMG_3960.jpg);
     background-attachment: fixed;
+    background-position: center;
     background-size: cover;
+    height: 3000px;
     
 }
 .welcome{
     position: absolute;
-    top: 50%;
-    left: 53%;
+    top: 50vh;
+    left: 50vw;
     color: rgb(207, 207, 207);
     font-size: 60px;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
     white-space: nowrap;
-    
+    margin: auto;
+
 }
 
 .blinking-cursor {
@@ -40,7 +40,7 @@ body {
 
 .header {
     min-height: 100vh;
-    width: 100vh;
+    width: 100%;
 
 }
 
@@ -57,20 +57,25 @@ body {
 
 nav {
     display: flex;
-    padding: 1% 6%;
+    padding: 1rem 3rem;
     justify-content: space-between;
     align-items: center;
     z-index: 10;
-    padding-left: 400px;
-
+    
 }
+
 
 nav img {
     z-index: 1;
     transition: all 0.3s;
     box-sizing: border-box;
     max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
+
+
 nav img:hover{
     transform: scale(1) rotate(360deg);
   
@@ -79,8 +84,6 @@ nav img:hover{
 .nav-links {
     flex: 1;
     text-align: right;
-    padding-right: 200px;
-    
 }
 
 .nav-links ul li {
@@ -96,6 +99,7 @@ nav img:hover{
     font-size: 20px;
 }
 
+
 .nav-links ul li::after {
     content: '';
     width: 0%;
@@ -110,162 +114,75 @@ nav img:hover{
     width: 100%;
 }
 
-
-@media (max-width: 1000px){
-    .welcome {
-       font-size: 55px;
-       left: 59%;
-       top: 30%;
-    }
-}
-
-
-@media only screen and (max-width: 1000px) {
-    .nav-links ul {
-        width: 60vh;
-    }
-}
-@media only screen and (max-width: 1000px) {
-    .nav-links ul li {
-        list-style: none;
-        display: inline-block;
-        padding: 4px 4px;
-        position: relative;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .nav-links ul li a {
-        font-size: 20px;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    nav {
-        padding: 2% 18%;
-    }
-}
-@media only screen and (max-width: 1000px) {
-    nav img {
-        width: 80px;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    #navbar {
-        height: 12vh;
-    }
-}
-
-.testimonial {
-    width: 100%;
-    height: 600px;
-}
-
-.testimonial-content {
-    width: 100%;
-    height: 370px;
-    top: 110%;
-    position: absolute;
+.vorstellung-container {
     display: flex;
-    z-index: 2;
-    justify-content: center;
     align-items: center;
-    color: hsl(0, 0%, 81%);
-    background-color: rgb(2, 5, 22, .97)
-}
-
-.testimonial-content andre-bild {
-    flex: 1;
-}
-
-.andre-bild img {
-    width: 250px;
-    border-style: solid;
-    border-width: 4px;
-    border-color: rgb(207, 207, 207);
-    border-radius: 125px;
-    margin-right: 60px;
-
-}
-
-.andre-text {
-    position: relative;
-    margin-left: 80px;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: rgb(2, 5, 22, 1);
+    color: rgb(207, 207, 207);
+    height: 40vh;
+  }
+  
+  .text-container {
+    max-width: 50%;
+    padding-right: 100px; 
+  }
+  .text-container h1 {
+    font-size: 32px;
     
-}
-
-.andre-text p {
+  }
+  .text-container p {
     font-size: 18px;
-}
+    margin-top: 20px;
+  }
+  
+  .bild-container {
+    max-width: 40%;
+    text-align: center;
+  }
+  
+  .bild-container img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+
+
 .autor{
     text-align: right;
-    margin-top: 5px;
-}
-.andre-text p i{
-    font-size: 14px;
-    
-}
-
-.linkes-zeichen {
-    position: absolute;
-    top: -30px;
-    left: -65px;
-}
-
-.rechtes-zeichen {
-    position: absolute;
-    right: -62px;
-    bottom: -30px;
+    margin-top: 50px;
+    padding-right: 10px;
 }
 
 
-@media only screen and (max-width: 1000px) {
-    .andre-bild img{
-        width: 130px;
-        margin-left: 0px;
-        
-    }
-}
-@media only screen and (max-width: 1000px){
-    .andre-text p{
-        font-size: 10px;
-        margin-right: 30px;
-        
-    }
-}
-@media only screen and (max-width: 1000px){
-    .testimonial-content{
-        width: 100vh;
-        top: 80%
-         
-    }
-}
 
 .Kontaktformular {
-    width: 100vh;
-    height: 800px
+    width: 100vw;
+    height: 150vh;
 }
 
 .container-kontakt {
-    top: 180%;
-    left:20%;
-    position: absolute;
+
     z-index: 2;
+    width: 65rem;
+    height: auto;
+    margin: 0 auto;
 }
 
 .container-oben {
     display: flex;
     justify-content: center;
-    height: 385px;
+    height: 25rem;
 }
 
 .inhalt-oben {
     display: flex;
     flex-direction: column;
     background-color: rgb(2, 5, 22, .97);
-    width: 330px;
-    border-radius: 30px;
+    width: 33rem;
+    border-radius: 3rem;
 }
 
 .inhalt-oben div {
@@ -302,7 +219,6 @@ nav img:hover{
     color: rgb(207, 207, 207);
     background: radial-gradient(rgb(177, 28, 42) 0%, rgb(155, 28, 36) 35%, rgba(114, 22, 24, 255)100%);
     border: none;
-    padding: 7px 10px 7px 10px;
     border-radius: 6px;
     font-family: oswald, arial;
     font-size: 15px;
@@ -311,7 +227,6 @@ nav img:hover{
     border-radius: 5px;
     font-size: 16px;
     padding: 0.8em 1.8em;
-    cursor: pointer;
     user-select: none;
     text-align: center;
     text-decoration: none;
@@ -356,7 +271,7 @@ nav img:hover{
 .container-unten {
     background-color: rgb(2, 5, 22, 0.97);
     display: flex;
-    height: 385px;
+    height: 25rem;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -364,12 +279,13 @@ nav img:hover{
     padding-right: 80px;
     padding-bottom: 40px;
     border-radius: 30px;
+    width: 55rem;
+    position: relative;
 }
 
 .container-unten h1 {
     display: flex;
     padding-top: 40px;
-    width: 100%;
     height: 20px;
     color: rgb(207, 207, 207);
     font-size: 24px;
@@ -384,6 +300,7 @@ nav img:hover{
 .container-unten p {
     flex: 1;
     color: rgb(207, 207, 207);
+    
 }
 
 .container-unten p input {
@@ -401,10 +318,11 @@ nav img:hover{
 .nachricht-zeile {
     margin-top: 50px;
     color: rgb(207, 207, 207);
+    display: inline-block;
 }
 
 .nachricht-zeile textarea {
-    width: 590px;
+    width: 35rem;
     height: 80px;
     margin-top: 10px;
     background-color: rgb(207, 207, 207);
@@ -414,34 +332,27 @@ nav img:hover{
 }
 
 .senden {
-    display: flex;
-    justify-content: end;
+    display: inline-block;
+    margin-left: 40px;
+    position: absolute;
+    bottom: 95px;
 }
 
 .senden button {
     color: rgb(207, 207, 207);
 }
 
-@media only screen and (max-width:1000px){
-    .container-kontakt {
-        left: 33%;
-    }
-}
 
 .footer {
-    position: absolute;
-    top: 300%;
     width: 100%;
-    height: 200px;
+    height: 25vh;
 }
 
 .footer-container {
     display: flex;
-    width: 100%;
-    height: 200px;
+    width: 100vw;
+    height: 25vh;
     background-color: rgb(2, 5, 22);
-    position: absolute;
-    bottom: 0;
     z-index: 3;
 }
 
@@ -478,97 +389,90 @@ nav img:hover{
     z-index: 3;
 }
 
-@media only screen and (max-width:1000px){
-    .footer-container{
-        width: 100vh;
+@media (max-width: 600px)  {
+    .nav-links ul li a{
+        font-size: 8px;
+        transition: ease 0.3s;
     }
+    nav img{
+        width: 50px;
+        transition: ease 0.3s;
+    }
+    #navbar {
+        height: 9vh;
+        transition: ease 0.3s;
+    }
+    .vorstellung-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100vh;
+    } 
+    .text-container {
+        max-width: 100%;
+        padding: 0px 40px;
+        text-align: center;
+    }
+    .bild-container {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .welcome{
+        font-size: 20px;
+        transition: ease 0.3s;
+    }
+}
+
+@media (min-width: 600.02px) and (max-width: 1000px){
+    .nav-links ul li a{
+        font-size: 14px;
+        transition: ease 0.3s;
+    }
+    nav img{
+        width: 80px;
+        transition: ease 0.3s;
+    }
+    #navbar{
+        height: 12vh;
+        transition: ease 0.3s;
+    }
+    .welcome{
+        font-size: 40px;
+        transition: ease 0.3s;
+    }
+    .bild-container img{
+        max-width: 80%;
+        transition: ease 0.3s;
+    }
+    .text-container{
+        padding-right: 50px;
+        transition: ease 0.3s;
+    }
+    .text-container h1 {
+        font-size: 24px;
+        
+      }
+      .text-container p {
+        font-size: 16px;
+        margin-top: 14px;
+      }
     
-}
+    
 
-@import url("https://fonts.googleapis.com/css2?family=Caudex&display=swap");
-
-
-.container {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  z-index: 2;
 }
-.container .box {
-  position: relative;
-  width: 280px;
-  height: 400px;
-  margin: 20px 0;
-  box-sizing: border-box;
-  overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px 0px,
-    rgba(0, 0, 0, 0.5) 0px 2px 15px 0px;
-}
-.container .box .imgBx {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #002417;
-  clip-path: circle(400px at center 100px);
-  transition: 0.5s;
-  transition-delay: 0.5s;
-}
-.container .box:hover .imgBx {
-  clip-path: circle(80px at center 100px);
-  transition-delay: 0s;
-}
-.container .box .imgBx img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.container .box .content {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 55%;
-  padding: 20px;
-  box-sizing: border-box;
-  text-align: center;
-}
-.container .box .content h2 {
-  margin: 0;
-  padding: 0;
-}
-.container .box .content a {
-  text-decoration: none;
-  background: #002417;
-  color: #fff;
-  padding: 5px;
-  display: inline-block;
-}
-.container .box .content h2,
-.container .box .content p,
-.container .box .content a {
-  opacity: 0;
-  transition: 0.5s;
-  transform: translateY(20px);
-}
-.container .box:hover .content h2 {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.5s;
-}
-.container .box:hover .content p {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.7s;
-}
-.container .box:hover .content a {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.9s;
+@media (min-width: 1000.02px){
+    .nav-links ul li a{
+        transition: ease 0.3s;
+    }
+    nav img{
+        transition: ease 0.3s;
+        width: 100px;
+    }
+    #navbar{
+        transition: ease 0.3s;
+    }
 }
