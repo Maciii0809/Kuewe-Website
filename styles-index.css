@@ -426,6 +426,9 @@ width: 40px;
 }
 
 @media (max-width: 768px)  {
+    body{
+        height: 4500px;
+    }
     #navbar i{
         display: block;
         color: #cfcfcf;
