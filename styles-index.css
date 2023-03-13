@@ -5,7 +5,7 @@
 }
 
 body{
-    height: 3000px;
+    height: 3300px;
     position: relative;
 }
 .bg{
@@ -172,7 +172,7 @@ nav img:hover{
 
 .Kontaktformular {
     max-width: 100vw;
-    height: auto;
+    height: 100vh;
     
 }
 
@@ -365,7 +365,9 @@ background-color: rgba(2, 5, 22, 0.97);
 color: #cfcfcf;
 padding: 40px 0;
 margin-top: 200px;
-
+width: 100%;
+position: absolute;
+bottom: 0;
 }
 
 .footer-container {
@@ -469,7 +471,7 @@ width: 40px;
         margin-left: 0;
     }
     #navbar {
-        height: 9vh;
+        height: 8vh;
         transition: ease 0.3s;
     }
     .vorstellung-container{
