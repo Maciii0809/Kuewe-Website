@@ -427,7 +427,7 @@ width: 40px;
 
 @media (max-width: 768px)  {
     body{
-        height: 450vh;
+        height: 800vh;
     }
     #navbar i{
         display: block;
