@@ -10,7 +10,7 @@ body{
     height: 3000px;
 }
 .bg{
-    background-image: linear-gradient(rgba(1,1,1,0.3), rgba(1,1,1,0.3)), url(IMG_3960.jpg);
+    background-image: linear-gradient(rgba(1,1,1,0.6), rgba(1,1,1,0.6)), url(IMG_3960.jpg);
     position: fixed;
     background-position: center;
     background-size: cover;
