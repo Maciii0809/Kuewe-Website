@@ -17,222 +17,218 @@
 </head>
 
 <body>
-    <div class="bg"></div>
-<section class="header">
-   <div id="navbar">
-        <nav>
-            <a href="index.html"><img src="Vektor+Weiß+(002)richtig.png"></a>
-            <div class="nav-links" id="navLinks">
-                <i style=" z-index: 3; color: white;"class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="">Shop</a></li>
-                    <li><a href="">Events</a></li>
-                    <li><a href="">Unser Team</a></li>
-                    <li><a href="gallery.html">Galerie</a></li>
-                    <li><a href="">Kontakt</a></li>
-                </ul>
+        <div class="bg"></div>
+    <section class="header">
+    <div id="navbar">
+            <nav>
+                <a href="küwe2.html"><img src="Vektor+Weiß+(002)richtig.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i style=" z-index: 3; color: white;"class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">Events</a></li>
+                        <li><a href="">Unser Team</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="">Kontakt</a></li>
+                    </ul>
+                </div>
+                <i style="z-index: 2;"class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+    </div> 
+    <div class="welcome">
+        <span id="type-text"></span>
+        <span class="blinking-cursor">_</span>
+        </div>
+    </section>
+    <main>
+    <section class="vorstellung">
+        <div class="balken-container">
+            <div class="vorstellung-container">
+                <div class="bild-container">
+                    <img src="IMG_4079.jpeg">
+                </div>  
+                <div class="text-container">
+                    <h1>
+                        Herzlich Willkommen im Küwe!
+                    </h1>
+                    <p>Unsere erlesenen Weine aus der Pfalz und dem Rest der Welt verführen Dich zu einem Geschmackserlebnis, das Lust auf mehr macht! Egal ob Du auf der Suche nach einem speziellen Wein oder einer Eventlocation bist, wir bieten Dir eine einmalige Mischung aus Genuss und Stil im Herzen der Pfalz!</p>
+                    
+                    <p class="autor"><i>Andre - Winzer & Önologe</i></p>
+                    
+                </div>
             </div>
-            <i style="z-index: 2;"class="fa-solid fa-bars" onclick="showMenu()"></i>
-        </nav>
-   </div> 
-   <div class="welcome">
-    <span is="type-async" id="type-text">...</span>
-    <span class="blinking-cursor">_</span>
     </div>
-</section>
-<main>
-<section class="vorstellung">
-    <div class="balken-container">
-        <div class="vorstellung-container">
-            <div class="bild-container">
-                <img src="IMG_4079.jpeg">
-            </div>  
-            <div class="text-container">
-                <h1>
-                    Herzlich Willkommen im Küwe!
-                </h1>
-                <p>Unsere erlesenen Weine aus der Pfalz und dem Rest der Welt verführen Dich zu einem Geschmackserlebnis, das Lust auf mehr macht! Egal ob Du auf der Suche nach einem speziellen Wein oder einer Eventlocation bist, wir bieten Dir eine einmalige Mischung aus Genuss und Stil im Herzen der Pfalz!</p>
-                
-                <p class="autor"><i>Andre - Winzer & Önologe</i></p>
-                
+    </section>
+    <section class="Kontaktformular">
+        <div class="container-kontakt">
+            <div class="inhalt-oben">
+                <div><img
+                        src="icons8-lautstärke-des-klingeltons-50 Kopie.png">
+                </div>
+                <div><h1>Ruf uns an</h1>
+                </div>
+                <div><p>Wir sind im Rahmen unserer Öffnungszeiten telefonisch zu erreichen</p>
+                </div>
+                <div><li>
+                    <button onclick="window.open('tel:062326848482')">06232 / 684 84 82</button>
+                </li>
+                </div>
+            </div>
+            <div class="inhalt-oben">
+                <div><img src="icons8-mail-verfassen-50 Kopie.png"></div>
+                <div><h1>Maile uns</h1></div>
+                <div><p>Jegliche Anfragen und Informationen können auch per E-Mail angefragt werden</p></div>
+                <div><li>
+                    <button onclick="window.location = 'mailto:info@kuewe.de';">info@kuewe.de</button>
+                </li>
+                </div>
+            </div>
+            <div class="inhalt-oben">
+                <div><img src="icons8-karten-stecknadel-50 Kopie.png"></div>
+                <div><h1>Komm vorbei</h1></div>
+                <div><p>Roßmarktstraße 1b<br>
+                    67346 Speyer</p></div>
+                <div><li>
+                    <button onclick="window.open('https:goo.gl/maps/pvzQvY42rMu1ptsSA', '_blank');">View on Map</button>
+                </li></div>
             </div>
         </div>
-   </div>
-</section>
-<section class="Kontaktformular">
-    <div class="container-kontakt">
-        <div class="inhalt-oben">
-            <div><img
-                    src="icons8-lautstärke-des-klingeltons-50 Kopie.png">
+        <div class="container-unten">
+            <h1>KONTAKTIERE UNS DIREKT</h1>
+            <form onsubmit="sendEmail(); reset(); return false;">
+            <div class="details-zeile">
+                <p>
+                <input type="text" id="name" required />
+                <label for="name">Name</label>
+                </p>
+                <p>
+                <input type="email" id="email" required />
+                <label for="email">E-Mail</label>
+                </p>
+                <p>
+                <input type="text" id="phone" required />
+                <label for="phone">Telefon</label>
+                </p>
             </div>
-            <div><h1>Ruf uns an</h1>
+            <div class="nachricht-zeile">
+                <label for="message">Deine Nachricht</label>
+                <textarea id="message" required></textarea>
             </div>
-            <div><p>Wir sind im Rahmen unserer Öffnungszeiten telefonisch zu erreichen</p>
+            <div class="senden">
+                <button type="submit">Absenden</button>
             </div>
-            <div><li>
-                <button onclick="window.open('tel:062326848482')">06232 / 684 84 82</button>
-            </li>
-            </div>
+            </form>
         </div>
-        <div class="inhalt-oben">
-            <div><img src="icons8-mail-verfassen-50 Kopie.png"></div>
-            <div><h1>Maile uns</h1></div>
-            <div><p>Jegliche Anfragen und Informationen können auch per E-Mail angefragt werden</p></div>
-            <div><li>
-                <button onclick="window.location = 'mailto:info@kuewe.de';">info@kuewe.de</button>
-            </li>
-            </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+        <div class="footer-links">
+            <img src="Vektor+Weiß+(002)richtig.png" alt="Footer Logo">
         </div>
-        <div class="inhalt-oben">
-            <div><img src="icons8-karten-stecknadel-50 Kopie.png"></div>
-            <div><h1>Komm vorbei</h1></div>
-            <div><p>Roßmarktstraße 1b<br>
-                67346 Speyer</p></div>
-            <div><li>
-                <button onclick="window.open('https:goo.gl/maps/pvzQvY42rMu1ptsSA', '_blank');">View on Map</button>
-            </li></div>
+        <div class="footer-mitte">
+            <h2>Küwe GmbH</h2>
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Unser Team</a></li>
+            <li><a href="#">Galerie</a></li>
+            <li><a href="#">Kontakt</a></li>
+            </ul>
         </div>
-    </div>
-    <div class="container-unten">
-        <h1>KONTAKTIERE UNS DIREKT</h1>
-        <form onsubmit="sendEmail(); reset(); return false;">
-          <div class="details-zeile">
-            <p>
-              <input type="text" id="name" required />
-              <label for="name">Name</label>
-            </p>
-            <p>
-              <input type="email" id="email" required />
-              <label for="email">E-Mail</label>
-            </p>
-            <p>
-              <input type="text" id="phone" required />
-              <label for="phone">Telefon</label>
-            </p>
-          </div>
-          <div class="nachricht-zeile">
-            <label for="message">Deine Nachricht</label>
-            <textarea id="message" required></textarea>
-          </div>
-          <div class="senden">
-            <button type="submit">Absenden</button>
-          </div>
-        </form>
-      </div>
-</section>
-</main>
-<footer class="footer">
-    <div class="footer-container">
-      <div class="footer-links">
-        <img src="Vektor+Weiß+(002)richtig.png" alt="Footer Logo">
-      </div>
-      <div class="footer-mitte">
-        <h2>Küwe GmbH</h2>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Unser Team</a></li>
-          <li><a href="#">Galerie</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
-      </div>
-      <div class="footer-rechts">
-        <a href="#"><img src="icons8-instagram-96.png" alt="Instagram icon"></a>
-        <a href="#"><img src="icons8-facebook-96.png" alt="Facebook icon"></a>
-      </div>
-    </div>
-  </footer>
-   <script>
-    async function init () {
-const node = document.querySelector("#type-text")
-
-
-await sleep(1000)
-node.innerText = ""
-
-
-while (true) {
-await node.type('Du magst Wein?')
-await sleep(2000)
-await node.delete('Wein?')
-await sleep (1000)
-await node.type('nette Gesellschaft?')
-await sleep(2000)
-await node.delete('Du magst nette Gesellschaft?')
-await sleep (1000)
-await node.type('Dann bist du hier genau richtig!')
-await sleep(2000)
-await node.delete('Dann bist du hier genau richtig!')
-await sleep(1000)
-await node.type('Schau dich um oder ruf uns an')
-await sleep(2000)
-await node.delete('Schau dich um oder ruf uns an')
-await sleep(1000)
-await node.type('wir helfen dir gerne weiter!')
-await sleep(2000)
-await node.delete('wir helfen dir gerne weiter!')
-await sleep(1000)
-
-
-}
-}
-// Source code 🚩
-
-const sleep = time => new Promise(resolve => setTimeout(resolve, time))
-
-class TypeAsync extends HTMLSpanElement {
-get typeInterval () {
-const randomMs = 100 * Math.random()
-return randomMs < 50 ? 10 : randomMs
-}
-
-async type (text) {
-for (let character of text) {
-  this.innerText += character
-  await sleep(this.typeInterval)
-}
-}
-
-async delete (text) {
-for (let character of text) {
-  this.innerText = this.innerText.slice(0, this.innerText.length -1)
-  await sleep(this.typeInterval)
-}
-}
-}
-
-customElements.define('type-async', TypeAsync, { extends: 'span' })
-
-
-
-init()
-</script> 
-<script>
-    var navLinks = document.getElementById("navLinks");
-    function showMenu(){
-        navLinks.style.right = "0" 
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px"
+        <div class="footer-rechts">
+            <a href="#"><img src="icons8-instagram-96.png" alt="Instagram icon"></a>
+            <a href="#"><img src="icons8-facebook-96.png" alt="Facebook icon"></a>
+        </div>
+        </div>
+    </footer>
+    <script>
+        function init() {
+          const node = document.querySelector("#type-text");
+          let index = 0;
+          const messages = [
+            { message: "Du magst Wein?", writeDuration: 2000, breakDuration: 1000 },
+            { message: "Du magst nette Gesellschaft?", writeDuration: 2000, breakDuration: 1000 },
+            { message: "Dann bist du hier genau richtig!", writeDuration: 2000, breakDuration: 1000 },
+            { message: "Schau dich um oder ruf uns an", writeDuration: 2000, breakDuration: 1000 },
+            { message: "wir helfen dir gerne weiter!", writeDuration: 2000, breakDuration: 3000 },
+          ];
+      
+          const typeNextMessage = () => {
+            const { message, writeDuration, breakDuration } = messages[index];
+            typeMessage(node, message, writeDuration)
+              .then(() => wait(breakDuration))
+              .then(() => deleteMessage(node, message))
+              .then(() => {
+                index = (index + 1) % messages.length;
+                setTimeout(typeNextMessage, breakDuration);
+              })
+              .catch((error) => console.error(error));
+          };
+      
+          setTimeout(typeNextMessage, 0);
         }
-</script>  
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-    function sendEmail(){
-        Email.send({
-        secureToken:"5f24add7-e0c2-42fd-b496-aa3cc6105a05",
-        To : 'mar.golf@web.de',
-        From : document.getElementById("email").value,
-        Subject : "Neue Nachricht über Homepage",
-        Body : "Name " + document.getElementById("name").value
-        + "<br> Email: " + document.getElementById("email").value
-        + "<br> Telefonnummer: " + document.getElementById("phone").value
-        + "<br> Nachricht: " + document.getElementById("message").value
-    }).then(
-    message => alert("Nachricht erfolgreich versendet")
-    );
-    }
-</script>
+      
+        function typeMessage(node, message, duration) {
+          return new Promise((resolve, reject) => {
+            const characters = message.split("");
+            let i = 0;
+      
+            const intervalId = setInterval(() => {
+              if (i >= characters.length) {
+                clearInterval(intervalId);
+                setTimeout(() => resolve(), duration);
+                return;
+              }
+              node.innerText += characters[i];
+              i += 1;
+            }, 80);
+          });
+        }
+      
+        function deleteMessage(node, message) {
+          return new Promise((resolve, reject) => {
+            const characters = message.split("");
+            let i = characters.length - 1;
+      
+            const intervalId = setInterval(() => {
+              if (i < 0) {
+                clearInterval(intervalId);
+                node.innerText = "";
+                resolve();
+                return;
+              }
+              node.innerText = node.innerText.slice(0, -1);
+              i -= 1;
+            }, 40);
+          });
+        }
+      
+        function wait(duration) {
+          return new Promise((resolve, reject) => {
+            setTimeout(() => resolve(), duration);
+          });
+        }
+      
+        init();
+      </script>
+          <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+            secureToken:"5f24add7-e0c2-42fd-b496-aa3cc6105a05",
+            To : 'mar.golf@web.de',
+            From : document.getElementById("email").value,
+            Subject : "Neue Nachricht über Homepage",
+            Body : "Name " + document.getElementById("name").value
+            + "<br> Email: " + document.getElementById("email").value
+            + "<br> Telefonnummer: " + document.getElementById("phone").value
+            + "<br> Nachricht: " + document.getElementById("message").value
+        }).then(
+        message => alert("Nachricht erfolgreich versendet")
+        );
+        }
+    </script>
 </body>   
 </html>
