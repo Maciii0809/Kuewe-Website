@@ -1,7 +1,7 @@
 function handleScroll() {
   var navbar = document.getElementById("navbar"); // Get navbar element inside the function to update it every time the function runs
   var currentScrollPos = window.pageYOffset;
-  if (window.innerWidth >= 400) { // Check screen size inside the function instead of outside
+  if (window.innerWidth >= 768) { // Check screen size inside the function instead of outside
     if (prevScrollpos > currentScrollPos) {
       navbar.style.top = "0";
     } else {
