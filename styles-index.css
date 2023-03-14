@@ -745,9 +745,6 @@ nav img:hover {
 
 /* gallery css*/
 
-.gallery{
-    margin-top: 20vh;
-}
 
 /* The magic */
 .col {
@@ -789,7 +786,7 @@ nav img:hover {
   
   
   .container-gallery {
-    margin: 0 auto;
+    margin: 400px auto;
     padding: 2rem;
     max-width: 1200px;
   }
