@@ -5,7 +5,7 @@
 }
 
 body {
-    height: 380vh;
+    height: 400vh;
     position: relative;
 }
 
@@ -19,10 +19,7 @@ body {
     z-index: -1;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-  }
+
   
   .bg-gallery {
     position: fixed;
@@ -454,6 +451,11 @@ nav img:hover {
     body {
         height: 4300px;
     }
+    #gallery{
+        height: 5500px;
+    }
+    
+    
 
     #navbar i {
         display: block;
@@ -578,6 +580,9 @@ nav img:hover {
 @media (min-width: 400.02px) and (max-width: 768px) {
     body {
         height: 4300px;
+    }
+    #gallery{
+        height: 5500px;
     }
 
     #navbar i {
@@ -704,6 +709,9 @@ nav img:hover {
         font-size: 14px;
         transition: ease 0.3s;
     }
+    #gallery{
+        height: 3500px;
+    }
 
     nav img {
         width: 80px;
@@ -753,6 +761,9 @@ nav img:hover {
 
     #navbar {
         transition: ease 0.3s;
+    }
+    #gallery{
+        height: 3400px;
     }
 }
 
