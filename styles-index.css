@@ -449,10 +449,10 @@ nav img:hover {
 
 @media (max-width: 400px) {
     body {
-        height: 4100px;
+        height: 4300px;
     }
     #gallery{
-        height: 5500px;
+        height: 5400px;
     }
     
     
@@ -579,10 +579,10 @@ nav img:hover {
 
 @media (min-width: 400.02px) and (max-width: 768px) {
     body {
-        height: 4100px;
+        height: 4300px;
     }
     #gallery{
-        height: 5500px;
+        height: 5450px;
     }
 
     #navbar i {
