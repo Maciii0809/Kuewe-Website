@@ -449,7 +449,7 @@ nav img:hover {
 
 @media (max-width: 400px) {
     body {
-        height: 4300px;
+        height: 4250px;
     }
     #gallery{
         height: 5500px;
@@ -579,7 +579,7 @@ nav img:hover {
 
 @media (min-width: 400.02px) and (max-width: 768px) {
     body {
-        height: 4300px;
+        height: 4250px;
     }
     #gallery{
         height: 5500px;
