@@ -436,8 +436,130 @@ nav img:hover {
 #navbar i {
     display: none;
 }
+@media (max-width: 400px){
+    body {
+        height: 4300px;
+    }
 
-@media (max-width: 768px) {
+    #navbar i {
+        display: block;
+        color: #cfcfcf;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+
+    .nav-links ul {
+        padding: 30px;
+
+    }
+
+    .nav-links ul li {
+        display: block;
+
+    }
+
+    .nav-links {
+        position: absolute;
+        background: linear-gradient(to bottom, rgb(177, 28, 42) 0%, rgb(155, 28, 36) 10%, rgb(114, 22, 24)100%);
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 3;
+        transition: .6s;
+        height: 100vh;
+
+    }
+
+    .nav-links ul li a {
+        font-size: 16px;
+        transition: ease 0.3s;
+    }
+
+    .nav-links ul li::after {
+        display: none;
+
+    }
+
+    nav {
+        padding: .5rem 3rem;
+    }
+
+    nav img {
+        width: 50px;
+        transition: ease 0.3s;
+        margin-left: 0;
+    }
+
+    #navbar {
+        height: 8vh;
+        transition: ease 0.3s;
+    }
+
+    .vorstellung-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 130vh;
+    }
+
+    .text-container {
+        max-width: 100%;
+        padding: 0px 40px;
+        text-align: center;
+    }
+
+    .bild-container {
+        max-width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .welcome {
+        font-size: 20px;
+        transition: ease 0.3s;
+    }
+
+    .container-kontakt {
+        margin: 100px auto;
+        gap: 50px;
+    }
+
+    .details-zeile {
+        margin: 10px auto;
+        flex-direction: column;
+        
+        align-items: center;
+
+    }
+    .details-zeile p input {
+        background-color: #cfcfcf;
+        border: none;
+        border-radius: 3px;
+        height: 30px;
+        padding: 0 10px;
+        width: 30vh;
+    }
+    
+    .details-zeile p {
+        margin: 20px 0px;
+    }
+
+
+    .nachricht-zeile {
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+
+    .senden {
+        margin-right: 0px;
+    }
+}
+
+@media (min-width: 400.02px) and (max-width: 768px) {
     body {
         height: 4300px;
     }
@@ -660,25 +782,9 @@ nav img:hover {
     transition-delay: 0s;
   }
   
-  /* Pen styling */
-  * {
-    box-sizing: border-box;
-  }
   
-  body {
-    background: #fefefe;
-    color: #333;
-    font: 14px/1.5 "Fira Sans", sans-serif;
-  }
   
-  h1 {
-    font-size: 2.5rem;
-    font-weight: 300;
-    margin: 1.5em 0.5rem 1em;
-    text-align: center;
-  }
-  
-  .container {
+  .container-gallery {
     margin: 0 auto;
     padding: 2rem;
     max-width: 1200px;
