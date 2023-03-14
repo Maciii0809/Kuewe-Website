@@ -745,6 +745,10 @@ nav img:hover {
 
 /* gallery css/*
 
+.gallery{
+    margin-top: 20vh;
+}
+
 /* The magic */
 .col {
     overflow: hidden;
