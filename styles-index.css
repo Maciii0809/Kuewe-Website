@@ -1156,3 +1156,49 @@ nav img:hover {
 .flextext p{
     font-size: 1.5rem;
 }
+@media (max-width: 525px) {
+    #body-events{
+        height: 6000px;
+    }
+    .events{
+        height: 290vh;
+    }
+    .Weinproben {
+        height: 290vh;
+    }
+    .events-container h1{
+        font-size: 3rem;
+    }
+    #weinproben-auswahl{
+        font-size: 3rem;
+    }
+    .weinproben {
+        width: 100%;
+        margin: 100px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3;
+        gap: 5%;
+    }
+    .event-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 40rem ;
+        row-gap: 30px;
+    }
+    .flextext {
+        line-height: 3rem;
+    
+    }
+    .flextext h1{
+        font-size: 2.5rem;
+    }
+    .flextext span{
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+    
+    .flextext p{
+        font-size: 1.5rem;
+        padding-top: 50px;
+    }
+}
