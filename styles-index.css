@@ -567,6 +567,9 @@ nav img:hover {
     .details-zeile p {
         margin: 20px 0px;
     }
+    .details-zeile p label {
+        left:0px;
+    }
 
 
     .nachricht-zeile {
@@ -603,7 +606,7 @@ nav img:hover {
 
 @media (min-width: 525.02px) and (max-width: 768px) {
     body {
-        height: 4800px;
+        height: 4500px;
     }
 
     #gallery {
@@ -720,7 +723,9 @@ nav img:hover {
     .details-zeile p {
         margin: 20px 0px;
     }
-
+    .details-zeile p label {
+        left:0px;
+    }
 
     .nachricht-zeile {
         margin-left: 8px;
@@ -760,6 +765,10 @@ nav img:hover {
 }
 
 @media (min-width: 768.02px) and (max-width: 1000px) {
+    body {
+        height: 3800px;
+    }
+
     .nav-links ul li a {
         font-size: 14px;
         transition: ease 0.3s;
@@ -814,6 +823,10 @@ nav img:hover {
     .nachricht-zeile textarea{
         width: 85%;
     }
+    .details-zeile p label {
+        left: 10px;
+    }
+
 
 }
 
