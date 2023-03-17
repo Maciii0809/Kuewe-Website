@@ -1,14 +1,24 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    
+
 }
 
 body {
     height: 400vh;
     position: relative;
 }
-
+h1, p {
+    color: rgb(207, 207, 207);
+}
+p, ul, span, label, textarea{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+h1, h2{
+    font-family: 'Montserrat', sans-serif;
+}
 .bg {
     background-image: linear-gradient(rgba(1, 1, 1, 0.6), rgba(1, 1, 1, 0.6)), url(IMG_3960.jpg);
     position: fixed;
@@ -20,19 +30,7 @@ body {
 }
 
 
-  
-  .bg-gallery {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-    background-image: linear-gradient(rgba(1, 1, 1, 0.6), rgba(1, 1, 1, 0.6)), url(IMG_3960.jpg);
-  }
-  
+
 .welcome {
     position: absolute;
     top: 50vh;
@@ -189,7 +187,7 @@ nav img:hover {
 
 .Kontaktformular {
     max-width: 100vw;
-    height: 100vh;
+    height: 130vh;
 
 }
 
@@ -311,7 +309,7 @@ nav img:hover {
 
 .container-unten h1 {
     color: #cfcfcf;
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 40px;
     text-align: center;
 }
@@ -319,17 +317,19 @@ nav img:hover {
 .details-zeile {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 40px;
-    margin-left: 20px;
     margin-top: 20px;
 }
 
+
 .details-zeile p {
     color: #cfcfcf;
-    flex-basis: calc(33.33% - 20px);
+    flex-basis: calc(33.33% - 0px);
     margin-bottom: 20px;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .details-zeile p input {
@@ -342,7 +342,7 @@ nav img:hover {
 }
 
 .details-zeile p label {
-    left: 0px;
+    left: 30px;
     position: absolute;
     top: -30px;
     transition: all 0.2s ease-out;
@@ -355,8 +355,10 @@ nav img:hover {
 }
 
 .nachricht-zeile {
-    margin-bottom: 40px;
-    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .nachricht-zeile label {
@@ -372,20 +374,21 @@ nav img:hover {
     border-radius: 5px;
     height: 100px;
     padding: 10px;
-    width: 94%;
+    width: 50%
+    ;
 
 }
 
 .senden {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 53px;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .footer {
     background-color: rgba(2, 5, 22, 1);
     color: #cfcfcf;
-    padding: 40px 0;
+    padding: 40px 0px;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -398,6 +401,7 @@ nav img:hover {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 0px 80px;
 
 }
 
@@ -446,15 +450,14 @@ nav img:hover {
     display: none;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 525px) {
     body {
-        height: 4300px;
+        height: 4800px;
     }
-    #gallery{
+
+    #gallery {
         height: 6000px;
     }
-    
-    
 
     #navbar i {
         display: block;
@@ -536,7 +539,7 @@ nav img:hover {
     .welcome {
         font-size: 20px;
         transition: ease 0.3s;
-        
+
     }
 
     .container-kontakt {
@@ -570,17 +573,40 @@ nav img:hover {
         margin-left: 0px;
         margin-top: 40px;
     }
-
+    .nachricht-zeile textarea{
+        width: 85%;
+    }
     .senden {
         margin-right: 0px;
     }
+
+    .footer-container {
+        padding: 0px 60px;
+    }
+
+    .footer-links img {
+        width: 50px;
+    }
+
+    .footer-mitte h2 {
+        font-size: 1rem;
+    }
+
+    .footer-mitte ul li a {
+        font-size: 0.8rem;
+    }
+
+    .footer-rechts {
+        flex-direction: column;
+    }
 }
 
-@media (min-width: 430.02px) and (max-width: 768px) {
+@media (min-width: 525.02px) and (max-width: 768px) {
     body {
-        height: 4300px;
+        height: 4800px;
     }
-    #gallery{
+
+    #gallery {
         height: 6000px;
     }
 
@@ -668,7 +694,10 @@ nav img:hover {
 
     .container-kontakt {
         margin: 100px auto;
-        gap: 50px;
+        gap: 30px;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+
     }
 
     .details-zeile {
@@ -697,9 +726,36 @@ nav img:hover {
         margin-left: 8px;
         margin-top: 40px;
     }
+    .nachricht-zeile textarea{
+        width: 85%;
+    }
 
     .senden {
         margin-right: 9px;
+    }
+
+    .footer-links img {
+        width: 50px;
+    }
+
+    .footer-container {
+        padding: 0px 60px;
+    }
+
+    .footer-links img {
+        width: 50px;
+    }
+
+    .footer-mitte h2 {
+        font-size: 1rem;
+    }
+
+    .footer-mitte ul li a {
+        font-size: 0.8rem;
+    }
+
+    .footer-rechts {
+        flex-direction: column;
     }
 }
 
@@ -708,7 +764,8 @@ nav img:hover {
         font-size: 14px;
         transition: ease 0.3s;
     }
-    #gallery{
+
+    #gallery {
         height: 3500px;
     }
 
@@ -746,6 +803,18 @@ nav img:hover {
         font-size: 16px;
         margin-top: 14px;
     }
+
+    .container-kontakt {
+        margin: 100px auto;
+        gap: 50px;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+
+    }
+    .nachricht-zeile textarea{
+        width: 85%;
+    }
+
 }
 
 @media (min-width: 1000.02px) {
@@ -761,7 +830,8 @@ nav img:hover {
     #navbar {
         transition: ease 0.3s;
     }
-    #gallery{
+
+    #gallery {
         height: 3400px;
     }
 }
@@ -773,7 +843,7 @@ nav img:hover {
     background-color: rgba(2, 5, 22, 1);
     padding: 15vh 0vh;
     z-index: 2;
-    
+
 }
 
 /* The magic */
@@ -874,4 +944,202 @@ nav img:hover {
     .col {
         flex: 1 0 25%;
     }
+}
+
+
+/* events css*/
+#body-events {
+    height: 5000px;
+}
+
+.Weinproben {
+    width: 100%;
+    height: 150vh;
+    background-color: rgba(2, 5, 22, 1);
+    color: #cfcfcf;
+
+}
+
+.weinproben-container {
+    width: 75%;
+    margin: 0px auto;
+}
+
+.einleitung {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.einleitung p {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.einleitung h1 {
+    padding: 50px 0px;
+    font-size: 4rem;
+}
+
+
+.weinproben {
+    width: 100%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+}
+
+#weinproben-auswahl{
+    font-size: 10.5rem;
+    text-align: center;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, rgb(177, 28, 42) 0%, rgb(155, 28, 36) 35%, rgba(114, 22, 24, 255)100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding: 100px 0px;
+    }
+
+.weinproben-flexbox{
+    display: flex;
+    flex-direction: column;
+}    
+
+
+.slider h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.slider-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    position: relative;
+}
+
+.slider-img:hover {
+    box-shadow: 0 0 0 200px rgba(2, 5, 22, .7) inset;
+}
+
+.slider-img h1 {
+    opacity: 1;
+    text-decoration: none;
+    transform: scale(1);
+    transition: 0.5s;
+    font-size: 1.8rem;
+    color: #cfcfcf;
+    position: absolute;
+    top: 40%;
+}
+.slider-img h2 {
+    opacity: 1;
+    text-decoration: none;
+    transform: scale(1);
+    transition: 0.5s;
+    font-size: 1.2rem;
+    color: #cfcfcf;
+    position: absolute;
+    top: 55%
+}
+
+.slider-img p {
+    opacity: 0;
+    text-decoration: none;
+    transform: scale(0);
+    transition: 0.5s;
+    font-size: 1.2rem;
+    color: #cfcfcf;
+    padding: 10px 0px;
+}
+
+.slider-img:hover h1, .slider-img:hover h2 {
+    opacity: 0;
+    transform: scale(1);
+}
+
+.slider-img:hover p {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.img-1 {
+    background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url(111744-1920w.webp);
+    background-position-y: 20%;
+}
+
+.img-2 {
+    background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url(IMG_7108-1920w.webp);
+    background-position-y: 40%;
+}
+
+.img-3 {
+    background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url(E43871D4-E449-41FD-BD5B-8A1E30181897-1920w.webp);
+    background-position-y: 20%;
+}
+
+.events {
+    width: 100%;
+    height: 230vh;
+    background-color: rgba(2, 5, 22, 1);
+    color: #cfcfcf;
+}
+.events-container{
+    width: 75%;
+    margin: 0px auto;
+    display: grid;
+    
+}
+.events-container h1{
+    text-align: center;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, rgb(177, 28, 42) 0%, rgb(155, 28, 36) 35%, rgba(114, 22, 24, 255)100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 10.5rem;
+    padding-top: 100px;
+}
+.event-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50rem 50rem 50rem;
+    width: 75%;
+    margin: 200px auto;
+    column-gap: 30px;
+    row-gap: 30px;
+    overflow: hidden;
+}
+#event-bild{
+    background-image: url(ENTWURF+kleiner-freitag-30032023-story-1920w.webp);
+    max-height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.flextext {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 3rem;
+
+}
+.flextext h1{
+    font-size: 2.5rem;
+}
+.flextext span{
+    font-size: 2rem;
+}
+
+.flextext p{
+    font-size: 1.5rem;
 }
