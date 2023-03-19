@@ -482,6 +482,9 @@
     nav{
         padding: .8rem 3rem;
     }  
+    #navbar{
+        height: 9vh;
+    }
 }
 @media only screen and (min-height: 900.02px) and (max-height: 1000px) {
     
