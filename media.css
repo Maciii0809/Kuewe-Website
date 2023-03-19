@@ -1,5 +1,4 @@
 @media only screen and (max-width: 525px) {
-
     #gallery {
         height: 6000px;
     }
@@ -29,6 +28,7 @@
         text-align: left;
         z-index: 3;
         transition: .6s;
+        height: 100vh;
     }
 
     .nav-links ul li a {
@@ -156,23 +156,36 @@
     }
 
     #body-events {
-        height: 6000px;
+        height: 4800px;
     }
 
     .events {
-        height: 290vh;
+        height: 190vh;
     }
 
     .Weinproben {
-        height: 290vh;
+        height: 240vh;
+    }
+    .einleitung h1{
+        font-size: 2rem;
+    }
+    .einleitung p{
+        font-size: 1rem;
+        line-height: 25px;
+        padding-bottom: 50px;
     }
 
     .events-container h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        padding-top: 0px;
     }
 
     #weinproben-auswahl {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        padding: 50px 0px 0px;
+    }
+    hr{
+        color: rgb(207, 207, 207);
     }
 
     .weinproben {
@@ -188,27 +201,35 @@
         grid-template-columns: 1fr;
         grid-template-rows: 40rem;
         row-gap: 30px;
+        margin: 100px auto;
     }
 
     .flextext {
         line-height: 3rem;
-
     }
 
     .flextext h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .flextext span {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: 800;
     }
 
     .flextext p {
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding-top: 50px;
+        line-height: 25px;
+    }
+    .col{
+        border-style: none;
+        margin-bottom: 20px;
     }
 }
+    
+
+
 
 @media only screen and (min-width: 525.02px) and (max-width: 768px) {
     body {
@@ -381,6 +402,10 @@
     .footer-rechts img {
         width: 60px;
     }
+    .col{
+        border-style: none;
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (min-width: 768.02px) and (max-width: 1200px) {
@@ -474,6 +499,9 @@
     body{
         height: 4200px;
     }
+    .event-grid{
+        grid-template-rows: 35rem;
+    }
 }
 @media only screen and (min-height: 810.02px) and (max-height: 900px) {
     body{
@@ -482,9 +510,13 @@
     nav{
         padding: .8rem 3rem;
     }  
-    #navbar{
-        height: 9vh;
+    .Weinproben{
+        height: 210vh;
     }
+    .events{
+        height: 170vh;
+    }
+    
 }
 @media only screen and (min-height: 900.02px) and (max-height: 1000px) {
     
