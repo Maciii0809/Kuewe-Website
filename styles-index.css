@@ -452,7 +452,7 @@ nav img:hover {
 
 @media (max-width: 525px) {
     body {
-        height: 4800px;
+        height: 4500px;
     }
 
     #gallery {
