@@ -1,0 +1,195 @@
+#body-events {
+    height: 5000px;
+}
+
+.Weinproben {
+    width: 100%;
+    height: 150vh;
+    background-color: rgba(2, 5, 22, 1);
+    color: #cfcfcf;
+
+}
+
+.weinproben-container {
+    width: 75%;
+    margin: 0px auto;
+}
+
+.einleitung {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.einleitung p {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.einleitung h1 {
+    padding: 50px 0px;
+    font-size: 4rem;
+}
+
+
+.weinproben {
+    width: 100%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+}
+
+#weinproben-auswahl{
+    font-size: 10.5rem;
+    text-align: center;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, rgb(177, 28, 42) 0%, rgb(155, 28, 36) 35%, rgba(114, 22, 24, 255)100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding: 100px 0px;
+    }
+
+.weinproben-flexbox{
+    display: flex;
+    flex-direction: column;
+}    
+
+
+.slider h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.slider-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    position: relative;
+}
+
+.slider-img:hover {
+    box-shadow: 0 0 0 200px rgba(2, 5, 22, .7) inset;
+}
+
+.slider-img h1 {
+    opacity: 1;
+    text-decoration: none;
+    transform: scale(1);
+    transition: 0.5s;
+    font-size: 1.8rem;
+    color: #cfcfcf;
+    position: absolute;
+    top: 40%;
+}
+.slider-img h2 {
+    opacity: 1;
+    text-decoration: none;
+    transform: scale(1);
+    transition: 0.5s;
+    font-size: 1.2rem;
+    color: #cfcfcf;
+    position: absolute;
+    top: 55%
+}
+
+.slider-img p {
+    opacity: 0;
+    text-decoration: none;
+    transform: scale(0);
+    transition: 0.5s;
+    font-size: 1.2rem;
+    color: #cfcfcf;
+    padding: 10px 0px;
+}
+
+.slider-img:hover h1, .slider-img:hover h2 {
+    opacity: 0;
+    transform: scale(1);
+}
+
+.slider-img:hover p {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.img-1 {
+    background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url(111744-1920w.webp);
+    background-position-y: 20%;
+}
+
+.img-2 {
+    background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url(IMG_7108-1920w.webp);
+    background-position-y: 40%;
+}
+
+.img-3 {
+    background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url(E43871D4-E449-41FD-BD5B-8A1E30181897-1920w.webp);
+    background-position-y: 20%;
+}
+
+.events {
+    width: 100%;
+    height: 230vh;
+    background-color: rgba(2, 5, 22, 1);
+    color: #cfcfcf;
+}
+.events-container{
+    width: 75%;
+    margin: 0px auto;
+    display: grid;
+    
+}
+.events-container h1{
+    text-align: center;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, rgb(177, 28, 42) 0%, rgb(155, 28, 36) 35%, rgba(114, 22, 24, 255)100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 10.5rem;
+    padding-top: 100px;
+}
+.event-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50rem 50rem 50rem;
+    width: 75%;
+    margin: 200px auto;
+    column-gap: 30px;
+    row-gap: 30px;
+    overflow: hidden;
+}
+#event-bild{
+    background-image: url(ENTWURF+kleiner-freitag-30032023-story-1920w.webp);
+    max-height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.flextext {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 3rem;
+
+}
+.flextext h1{
+    font-size: 2.5rem;
+}
+.flextext span{
+    font-size: 2rem;
+}
+
+.flextext p{
+    font-size: 1.5rem;
+}

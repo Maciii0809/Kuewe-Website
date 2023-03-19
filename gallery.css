@@ -1,0 +1,98 @@
+.container-gallery {
+    margin: 0rem auto;
+    max-width: 75vw;
+    padding: 0 1rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-width: 0px;
+}
+
+.col {
+    flex: 1 0 100%;
+    min-height: 260px;
+    overflow: hidden;
+    position: relative;
+    border-style: solid;
+    border-width: 10px;
+}
+
+.col:nth-child(2) {
+    min-width: 20%;
+}
+
+.col:nth-child(4) {
+    min-width: 33%;
+}
+
+.col:nth-child(3)+.col:nth-child(3) {
+    min-width: 50%;
+}
+
+.photo-container {
+    background: #0f0523 50% 50% / cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 1s;
+}
+
+.photo-container::before {
+    background: linear-gradient(transparent, rgba(67, 17, 51, 0));
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.col:hover .photo-container {
+    transform: scale(1.25);
+}
+
+.slide {
+    background: rgba(2, 5, 22, .5);
+    padding: 0 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.275s ease-in-out, visibility 0s 0.275s;
+    visibility: hidden;
+    will-change: transform;
+    transform: translateY(100%);
+}
+
+.row:hover .col:hover .slide {
+    transform: none;
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+.row:hover .col:hover~.col .slide {
+    transform: translateX(-100%);
+}
+
+.row:hover .slide {
+    transform: translateX(100%);
+}
+
+@media (min-width: 768px) {
+    .col {
+        flex: 1 0 33.33%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .col {
+        flex: 1 0 25%;
+    }
+}
