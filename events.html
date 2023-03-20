@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Küwe - Wine & Events</title>
@@ -13,10 +15,12 @@
     <link rel="stylesheet" href="media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@300;400;800&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/bf5e3051ec.js" crossorigin="anonymous"></script>
     <script src="kuewe2.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -26,11 +30,11 @@
 <body id="body-events">
     <div class="bg"></div>
     <section class="header">
-    <div id="navbar">
+        <div id="navbar">
             <nav>
                 <a href="index.html"><img src="Vektor+Weiß+(002)richtig.png"></a>
                 <div class="nav-links" id="navLinks">
-                    <i style=" z-index: 3; color: rgb(207,207,207);"class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <i style=" z-index: 3; color: rgb(207,207,207);" class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="">Shop</a></li>
                         <li><a href="events.html">Events</a></li>
@@ -39,31 +43,35 @@
                         <li><a href="">Kontakt</a></li>
                     </ul>
                 </div>
-                <i style="z-index: 2;"class="fa-solid fa-bars" onclick="showMenu()"></i>
+                <i style="z-index: 2;" class="fa-solid fa-bars" onclick="showMenu()"></i>
             </nav>
-    </div> 
-    <div class="welcome">
-        <span id="type-text"></span>
-        <span class="blinking-cursor">_</span>
+        </div>
+        <div class="welcome">
+            <span id="type-text"></span>
+            <span class="blinking-cursor">_</span>
         </div>
     </section>
     <main>
         <section class="Weinproben">
             <div class="weinproben-container">
-                <div class="einleitung"> 
-                    <h1>Unser Angebot</h1> 
+                <div class="einleitung">
+                    <h1>Unser Angebot</h1>
                     <p>
-                    Lerne neue Leute, leckere Weine & die jeweilige Philosophie dahinter kennen.
-                    Wir zeigen dir wie man einen Sekt, traditionell mit einem Säbel öffnet, Weine professionell verkostet werden und wie sich verschiedene Rebsorten und Anbaumethoden unterscheiden.
-                    Egal ob bei einer unserer offenen Weinproben, bei der sich jeder vorab anmelden kann, oder bei deiner ganz privaten Weinprobe mit Freunden und Familie.
+                        Lerne neue Leute, leckere Weine & die jeweilige Philosophie dahinter kennen.
+                        Wir zeigen dir wie man einen Sekt, traditionell mit einem Säbel öffnet, Weine professionell
+                        verkostet werden und wie sich verschiedene Rebsorten und Anbaumethoden unterscheiden.
+                        Egal ob bei einer unserer offenen Weinproben, bei der sich jeder vorab anmelden kann, oder bei
+                        deiner ganz privaten Weinprobe mit Freunden und Familie.
                     </p>
                     <hr>
                 </div>
-                <div>
-                    <h1 id="weinproben-auswahl">Weinproben</h1>
+                <div id="text" class="text">
+                    <div class="line">
+                        <h1 id='channel-link' class="ord fancy">Weinproben</h1>
+                    </div>
                 </div>
                 <div class="weinproben-flexbox">
-                    <div class="weinproben">  
+                    <div class="weinproben">
                         <div class="slider-img img-1">
                             <h1>Weinprobe Klein</h1>
                             <h2>(ab 8 Personen)</h2>
@@ -87,14 +95,16 @@
                             <p>7 aufeinander abgestimmte Weine</p>
                             <p>Zeit&#58;&nbsp; ca. 2,5h</p>
                             <p>Preis&#58;&nbsp; 45€ pro Person</p>
-                        </div>                              
-                    </div>                
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="events">
-            <div class="events-container">
-                <h1>Events</h1>
+            <div id="text" class="text">
+                <div class="line">
+                    <h1 id='channel-link2' class="ord fancy">Events</h1>
+                </div>
             </div>
             <div class="event-grid">
                 <div id="event-bild"></div>
@@ -107,9 +117,11 @@
                         Start: 18Uhr<br>
                         Ende: 22Uhr<br>
                         Was erwartet dich:<br><br>
-                        Zusammen mit unseren Freunden von MeinEvent, möchten wir gemeinsam mit dir, eine Party wie damals im elterlichen Keller feiern! Nur haben wir dieses Mal viel geilere Getränke ;-)
-                        Leckere Weine, tolle Menschen, Live-Musik von Johannes Weber und das Ganze in einer der coolsten Locations in Speyer *-*
-                        
+                        Zusammen mit unseren Freunden von MeinEvent, möchten wir gemeinsam mit dir, eine Party wie
+                        damals im elterlichen Keller feiern! Nur haben wir dieses Mal viel geilere Getränke ;-)
+                        Leckere Weine, tolle Menschen, Live-Musik von Johannes Weber und das Ganze in einer der coolsten
+                        Locations in Speyer *-*
+
                     </p>
                 </div>
             </div>
@@ -117,120 +129,142 @@
     </main>
     <footer class="footer">
         <div class="footer-container">
-        <div class="footer-links">
-            <img src="Vektor+Weiß+(002)richtig.png" alt="Footer Logo">
-        </div>
-        <div class="footer-mitte">
-            <h2>Küwe GmbH</h2>
-            <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Unser Team</a></li>
-            <li><a href="#">Galerie</a></li>
-            <li><a href="#">Kontakt</a></li>
-            </ul>
-        </div>
-        <div class="footer-rechts">
-            <a href="#"><img src="icons8-instagram-96.png" alt="Instagram icon"></a>
-            <a href="#"><img src="icons8-facebook-96.png" alt="Facebook icon"></a>
-        </div>
+            <div class="footer-links">
+                <img src="Vektor+Weiß+(002)richtig.png" alt="Footer Logo">
+            </div>
+            <div class="footer-mitte">
+                <h2>Küwe GmbH</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Unser Team</a></li>
+                    <li><a href="#">Galerie</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-rechts">
+                <a href="#"><img src="icons8-instagram-96.png" alt="Instagram icon"></a>
+                <a href="#"><img src="icons8-facebook-96.png" alt="Facebook icon"></a>
+            </div>
         </div>
     </footer>
     <script>
         function init() {
-          const node = document.querySelector("#type-text");
-          let index = 0;
-          const messages = [
-            { message: "Deine persönliche Weinprobe", writeDuration: 2000, breakDuration: 3000 },
+            const node = document.querySelector("#type-text");
+            let index = 0;
+            const messages = [
+                { message: "Deine persönliche Weinprobe", writeDuration: 2000, breakDuration: 3000 },
 
-          ];
-      
-          const typeNextMessage = () => {
-            const { message, writeDuration, breakDuration } = messages[index];
-            typeMessage(node, message, writeDuration)
-              .then(() => wait(breakDuration))
-              .then(() => deleteMessage(node, message))
-              .then(() => {
-                index = (index + 1) % messages.length;
-                setTimeout(typeNextMessage, breakDuration);
-              })
-              .catch((error) => console.error(error));
-          };
-      
-          setTimeout(typeNextMessage, 0);
+            ];
+
+            const typeNextMessage = () => {
+                const { message, writeDuration, breakDuration } = messages[index];
+                typeMessage(node, message, writeDuration)
+                    .then(() => wait(breakDuration))
+                    .then(() => deleteMessage(node, message))
+                    .then(() => {
+                        index = (index + 1) % messages.length;
+                        setTimeout(typeNextMessage, breakDuration);
+                    })
+                    .catch((error) => console.error(error));
+            };
+
+            setTimeout(typeNextMessage, 0);
         }
-      
+
         function typeMessage(node, message, duration) {
-          return new Promise((resolve, reject) => {
-            const characters = message.split("");
-            let i = 0;
-      
-            const intervalId = setInterval(() => {
-              if (i >= characters.length) {
-                clearInterval(intervalId);
-                setTimeout(() => resolve(), duration);
-                return;
-              }
-              node.innerText += characters[i];
-              i += 1;
-            }, 80);
-          });
+            return new Promise((resolve, reject) => {
+                const characters = message.split("");
+                let i = 0;
+
+                const intervalId = setInterval(() => {
+                    if (i >= characters.length) {
+                        clearInterval(intervalId);
+                        setTimeout(() => resolve(), duration);
+                        return;
+                    }
+                    node.innerText += characters[i];
+                    i += 1;
+                }, 80);
+            });
         }
-      
+
         function deleteMessage(node, message) {
-          return new Promise((resolve, reject) => {
-            const characters = message.split("");
-            let i = characters.length - 1;
-      
-            const intervalId = setInterval(() => {
-              if (i < 0) {
-                clearInterval(intervalId);
-                node.innerText = "";
-                resolve();
-                return;
-              }
-              node.innerText = node.innerText.slice(0, -1);
-              i -= 1;
-            }, 40);
-          });
+            return new Promise((resolve, reject) => {
+                const characters = message.split("");
+                let i = characters.length - 1;
+
+                const intervalId = setInterval(() => {
+                    if (i < 0) {
+                        clearInterval(intervalId);
+                        node.innerText = "";
+                        resolve();
+                        return;
+                    }
+                    node.innerText = node.innerText.slice(0, -1);
+                    i -= 1;
+                }, 40);
+            });
         }
-      
+
         function wait(duration) {
-          return new Promise((resolve, reject) => {
-            setTimeout(() => resolve(), duration);
-          });
+            return new Promise((resolve, reject) => {
+                setTimeout(() => resolve(), duration);
+            });
         }
-      
+
         init();
-      </script>
-          <script src="https://smtpjs.com/v3/smtp.js"></script>
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-        function sendEmail(){
+        function sendEmail() {
             Email.send({
-            secureToken:"5f24add7-e0c2-42fd-b496-aa3cc6105a05",
-            To : 'mar.golf@web.de',
-            From : document.getElementById("email").value,
-            Subject : "Neue Nachricht über Homepage",
-            Body : "Name " + document.getElementById("name").value
-            + "<br> Email: " + document.getElementById("email").value
-            + "<br> Telefonnummer: " + document.getElementById("phone").value
-            + "<br> Nachricht: " + document.getElementById("message").value
-        }).then(
-        message => alert("Nachricht erfolgreich versendet")
-        );
+                secureToken: "5f24add7-e0c2-42fd-b496-aa3cc6105a05",
+                To: 'mar.golf@web.de',
+                From: document.getElementById("email").value,
+                Subject: "Neue Nachricht über Homepage",
+                Body: "Name " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Telefonnummer: " + document.getElementById("phone").value
+                    + "<br> Nachricht: " + document.getElementById("message").value
+            }).then(
+                message => alert("Nachricht erfolgreich versendet")
+            );
         }
     </script>
     <script>
         var navLinks = document.getElementById("navLinks");
-        function showMenu(){
+        function showMenu() {
             navLinks.style.right = "0";
         }
-        function hideMenu(){
+        function hideMenu() {
             navLinks.style.right = "-200px";
         }
 
     </script>
-    
-</body>   
+    <script>
+        const enhance = id => {
+            const element = document.getElementById(id),
+                text = element.innerText.split('')
+
+            element.innerText = ''
+
+            text.forEach(letter => {
+                const span = document.createElement('span')
+
+                span.className = 'letter'
+
+                span.innerText = letter
+
+                element.appendChild(span)
+            })
+
+        }
+        enhance('channel-link')
+        enhance('channel-link2')
+    </script>
+
+</body>
+
 </html>
