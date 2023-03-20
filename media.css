@@ -505,10 +505,10 @@
         grid-template-rows: 30rem;
     }
     .Weinproben{
-        height: 250vh;
+        height: 220vh;
     }
     .events{
-        height: 180vh;
+        height: 170vh;
     }
 }
 @media only screen and (min-height: 790.02px) and (max-height: 800px){
@@ -519,7 +519,7 @@
         grid-template-rows: 35rem;
     }
     .Weinproben{
-        height: 230vh;
+        height: 210vh;
     }
     .events{
         height: 170vh;
@@ -533,7 +533,7 @@
         padding: .8rem 3rem;
     }  
     .Weinproben{
-        height: 230vh;
+        height: 210vh;
     }
     .events{
         height: 170vh;
