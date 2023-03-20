@@ -536,7 +536,7 @@
         height: 230vh;
     }
     .events{
-        height: 170vh;
+        height: 180vh;
     }
     .event-grid{
         grid-template-rows: 35rem;
@@ -548,7 +548,7 @@
         height: 200vh;
     }
     .events{
-        height: 190vh;
+        height: 170vh;
     }
     .event-grid{
         grid-template-rows: 35rem;
