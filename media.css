@@ -545,10 +545,10 @@
 }
 @media only screen and (min-height: 850.02px) and (max-height: 900px) {
     .Weinproben{
-        height: 210vh;
+        height: 200vh;
     }
     .events{
-        height: 160vh;
+        height: 165vh;
     }
     .event-grid{
         grid-template-rows: 35rem;
