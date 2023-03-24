@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Küwe - Wine & Events</title>
     <link rel="stylesheet" href="styles-index.css">
     <link rel="stylesheet" href="gallery.css">
@@ -34,9 +32,8 @@
                 <ul>
                     <li><a href="">Shop</a></li>
                     <li><a href="events.html">Events</a></li>
-                    <li><a href="">Unser Team</a></li>
+                    <li><a href="about-us.html">About us</a></li>
                     <li><a href="gallery.html">Galerie</a></li>
-                    <li><a href="">Kontakt</a></li>
                 </ul>
             </div>
             <i style="z-index: 2;"class="fa-solid fa-bars" onclick="showMenu()"></i>
@@ -130,24 +127,37 @@
     </main>
     <footer class="footer">
         <div class="footer-container">
-        <div class="footer-links">
-            <img src="Vektor+Weiß+(002)richtig.png" alt="Footer Logo">
-        </div>
-        <div class="footer-mitte">
-            <h2>Küwe GmbH</h2>
-            <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Unser Team</a></li>
-            <li><a href="#">Galerie</a></li>
-            <li><a href="#">Kontakt</a></li>
-            </ul>
-        </div>
-        <div class="footer-rechts">
-            <a href="#"><img src="icons8-instagram-96.png" alt="Instagram icon"></a>
-            <a href="#"><img src="icons8-facebook-96.png" alt="Facebook icon"></a>
-        </div>
+            <div class="footer-oben">
+                <a href=""><img
+                    src="icons8-lautstärke-des-klingeltons-50 Kopie.png">Ruf uns an</a>
+                <a href=""><img src="icons8-mail-verfassen-50 Kopie.png">Maile uns</a>
+                <a href="" ><img src="icons8-karten-stecknadel-50 Kopie.png">Finde uns</a>
+            </div>
+            <hr>
+            <div class="footer-unten">
+                <div class="footer-links">
+                    <img src="Vektor+Weiß+(002)richtig.png" alt="Footer Logo">
+                    <p>Roßmarktstraße</p>
+                    <p>67346 Speyer 1b</p>
+                </div>
+                <div class="footer-mitte">
+                    <h2>Küwe GmbH</h2>
+                    <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Unser Team</a></li>
+                    <li><a href="#">Galerie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-rechts">
+                    <h2>Folge uns</h2>
+                    <div class="insta-container">
+                        <a href="#"><img src="icons8-instagram-96.png" alt="Instagram icon"></a>
+                        <a href="#"><img src="icons8-facebook-96.png" alt="Facebook icon"></a>
+                    </div>
+                </div>                   
+            </div>      
         </div>
     </footer>
     <script>
@@ -155,11 +165,10 @@
           const node = document.querySelector("#type-text");
           let index = 0;
           const messages = [
-            { message: "Du magst Wein?", writeDuration: 2000, breakDuration: 1000 },
-            { message: "Du magst nette Gesellschaft?", writeDuration: 2000, breakDuration: 1000 },
-            { message: "Dann bist du hier genau richtig!", writeDuration: 2000, breakDuration: 1000 },
-            { message: "Schau dich um oder ruf uns an", writeDuration: 2000, breakDuration: 1000 },
-            { message: "Wir helfen dir gerne weiter!", writeDuration: 2000, breakDuration: 3000 },
+            { message: "Herzlich Willkommen im Küwé!", writeDuration: 1000, breakDuration: 500 },
+            { message: "Weinverkauf", writeDuration: 1000, breakDuration: 500 },
+            { message: "Weinproben", writeDuration: 1000, breakDuration: 500 },
+            { message: "Wein-Events", writeDuration: 1000, breakDuration: 1000 },
           ];
       
           const typeNextMessage = () => {

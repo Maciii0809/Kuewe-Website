@@ -1,3 +1,9 @@
+.gallery {
+    background-color: rgba(2, 5, 22, 1);
+    padding: 15vh 0vh;
+    z-index: 2;
+
+}
 .container-gallery {
     margin: 0rem auto;
     max-width: 75vw;
@@ -19,6 +25,7 @@
     border-style: solid;
     border-width: 10px;
 }
+
 
 .col:nth-child(2) {
     min-width: 20%;

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles-index.css">
     <link rel="stylesheet" href="gallery.css">
     <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="about-us.css">
     <link rel="stylesheet" href="media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +28,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
-<body id="body-events">
+<body id="body-about">
     <div class="bg"></div>
     <section class="header">
         <div id="navbar">
@@ -50,97 +51,83 @@
             <span class="blinking-cursor">_</span>
         </div>
     </section>
-    <main>
-        <section class="Weinproben">
-            <div class="weinproben-container">
-                <div class="einleitung">
-                    <h1>Unser Angebot</h1>
-                    <p>
-                        Lerne neue Leute, leckere Weine & die jeweilige Philosophie dahinter kennen.
-                        Wir zeigen dir wie man einen Sekt, traditionell mit einem Säbel öffnet, Weine professionell
-                        verkostet werden und wie sich verschiedene Rebsorten und Anbaumethoden unterscheiden.
-                        Egal ob bei einer unserer offenen Weinproben, bei der sich jeder vorab anmelden kann, oder bei
-                        deiner ganz privaten Weinprobe mit Freunden und Familie.
-                    </p>
-                    <hr id="strich-events">
-                </div>
-                <div id="text" class="text">
-                    <div class="line">
-                        <h1 id='channel-link' class="ord fancy">Weinproben</h1>
-                    </div>
-                </div>
-                <div class="weinproben-flexbox">
-                    <div class="weinproben">
-                        <div class="slider-img img-1">
-                            <h1>Weinprobe Klein</h1>
-                            <h2>(ab 8 Personen)</h2>
-                            <p>Ein von Dir sabrierter Sekt</p>
-                            <p>3 aufeinander abgestimmte Weine</p>
-                            <p>Zeit&#58;&nbsp; ca. 1,5h</p>
-                            <p>Preis&#58;&nbsp; 25€ pro Person</p>
-                        </div>
-                        <div class="slider-img img-2">
-                            <h1>Weinprobe Mittel</h1>
-                            <h2>(ab 8 Personen)</h2>
-                            <p>Ein von Dir sabrierter Sekt</p>
-                            <p>5 aufeinander abgestimmte Weine</p>
-                            <p>Zeit&#58;&nbsp; ca. 2h</p>
-                            <p>Preis&#58;&nbsp; 35€ pro Person</p>
-                        </div>
-                        <div class="slider-img img-3">
-                            <h1>Weinprobe Groß</h1>
-                            <h2>(ab 8 Personen)</h2>
-                            <p>Ein von Dir sabrierter Sekt</p>
-                            <p>7 aufeinander abgestimmte Weine</p>
-                            <p>Zeit&#58;&nbsp; ca. 2,5h</p>
-                            <p>Preis&#58;&nbsp; 45€ pro Person</p>
-                        </div>
-                    </div>
-                </div>
+    <section id="mitarbeiter" class="sector">
+        <div class="line" style="padding: 0px 0px 75px;">
+            <h1 id='channel-link' class="ord fancy">Unser&nbsp;Team</h1>
+        </div>
+        <div class="mitarbeiter-box">
+            <div class="personen-container" >
+                <div class="foto1" id="andre" onmouseover="extendSector(this),showHoverText()" onmouseleave="shrinkSector(),hideHoverText()"></div>
+                <div class="namen">Andre</div>
+                <div class="beruf"> Winzer & Önologe</div>
+                <div class="hover-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores inventore ipsum, aliquam molestiae, id magni harum eos, repudiandae minima exercitationem laborum quasi nostrum enim sunt facilis officiis dolores! Optio, officia.</div>
             </div>
-        </section>
-        <section class="events">
-            <div id="text" class="text">
-                <div class="line">
-                    <h1 id='channel-link2' class="ord fancy">Events</h1>
-                </div>
+            <div class="personen-container">
+                <div class="foto2" id="mama" onmouseover="extendSector(this),showHoverText()" onmouseleave="shrinkSector(),hideHoverText()"></div>
+                <div class="namen">Gabi</div>
+                <div class="beruf">Managed Büro & Ausschank</div>
+                <div class="hover-text2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem expedita tempora dolorum facere consequatur iste reiciendis explicabo quae ullam atque odit, sequi, quaerat minus aperiam excepturi culpa quas. Alias, doloribus.</div>
             </div>
-            <div class="event-grid">
-                <div id="event-bild"></div>
-                <div class="flextext">
-                    <h1>Kleiner Freitag <br><span>Eine Hausparty wie damals!</span></h1>
-                    <p>
-                        Thema: AfterWork-Party<br>
-                        5€ p.P.<br>
-                        Wann: 30.03.2023<br>
-                        Start: 18Uhr<br>
-                        Ende: 22Uhr<br>
-                        Was erwartet dich:<br><br>
-                        Zusammen mit unseren Freunden von MeinEvent, möchten wir gemeinsam mit dir, eine Party wie
-                        damals im elterlichen Keller feiern! Nur haben wir dieses Mal viel geilere Getränke ;-)
-                        Leckere Weine, tolle Menschen, Live-Musik von Johannes Weber und das Ganze in einer der coolsten
-                        Locations in Speyer *-*
-                    </p>
-                </div>
-                <div class="flextext2">
-                    <h1>Kleiner Freitag <br><span>Eine Hausparty wie damals!</span></h1>
-                    <p>
-                        Thema: AfterWork-Party<br>
-                        5€ p.P.<br>
-                        Wann: 30.03.2023<br>
-                        Start: 18Uhr<br>
-                        Ende: 22Uhr<br>
-                        Was erwartet dich:<br><br>
-                        Zusammen mit unseren Freunden von MeinEvent, möchten wir gemeinsam mit dir, eine Party wie
-                        damals im elterlichen Keller feiern! Nur haben wir dieses Mal viel geilere Getränke ;-)
-                        Leckere Weine, tolle Menschen, Live-Musik von Johannes Weber und das Ganze in einer der coolsten
-                        Locations in Speyer *-*
-                    </p>
-                </div>
-                <div id="event-bild2"></div>
+            <div class="personen-container">
+                <div class="foto3" id="robbo" onmouseover="extendSector(this).showHoverText()" onmouseleave="shrinkSector(),hideHoverText()"></div>
+                <div class="namen">Robert "Robbo"</div>
+                <div class="beruf">Fachmann für Vertrieb & Kooperationen</div>
+                <div class="hover-text3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati explicabo sapiente numquam vero temporibus exercitationem, nulla minus minima sed quas accusamus eos ipsam asperiores reiciendis ipsa, corporis suscipit nostrum eveniet.</div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+    <section class="kontakt">
+        <div class="zeiten-kontakt-container">
+            <div class="zeiten">
+                <h1>Öffnungszeiten:</h1>
+                <p class="mon">Montag: geschlossen</p>
+                <p class="tue">Dienstag: 11:00 Uhr - 18:00 Uhr</p>
+                <p class="wed">Mittwoch: 13:00 Uhr - 20:00 Uhr</p>
+                <p class="thu">Donnerstag: 11:00 Uhr - 18:00 Uhr</p>
+                <p class="fri">Freitag: 11:00 Uhr - 18:00 Uhr</p>
+                <p class="sat">Samstag: 11:00 Uhr - 17:00 Uhr</p>
+                <p class="sun">Sonntag: geschlossen</p>
+           </div>
+           <div class="kontaktiere-uns">
+                <h1>Kontakt</h1>
+                <p>Falls du Fragen zu unseren Produkten, Veranstaltungen oder Angeboten hast, schreib uns einfach eine kurze Nachricht und wir melden uns schnellstmöglich bei dir!</p>
+                <li>
+                    <button onclick="window.open('tel:062326848482')">06232 /<br>684 84 82</button>
+                    <button onclick="window.location = 'mailto:info@kuewe.de';">info@kuewe.de</button>
+                    <button onclick="window.open('https:goo.gl/maps/pvzQvY42rMu1ptsSA', '_blank');">View on Map</button>
+                </li> 
+           </div>
+        </div>  
+    </section>
+    <section class="formular">
+        <div class="container-unten">
+            <h1>KONTAKTIERE UNS DIREKT</h1>
+            <form onsubmit="sendEmail(); reset(); return false;">
+            <div class="details-zeile">
+                <p>
+                <input type="text" id="name" required />
+                <label for="name">Name</label>
+                </p>
+                <p>
+                <input type="email" id="email" required />
+                <label for="email">E-Mail</label>
+                </p>
+                <p>
+                <input type="text" id="phone" required />
+                <label for="phone">Telefon</label>
+                </p>
+            </div>
+            <div class="nachricht-zeile">
+                <label for="message">Deine Nachricht</label>
+                <textarea id="message" required></textarea>
+            </div>
+            <div class="senden">
+                <button type="submit">Absenden</button>
+            </div>
+            </form>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-links">
@@ -168,7 +155,7 @@
             const node = document.querySelector("#type-text");
             let index = 0;
             const messages = [
-                { message: "Deine persönliche Weinprobe", writeDuration: 2000, breakDuration: 3000 },
+                { message: "Erfahre mehr über uns", writeDuration: 2000, breakDuration: 3000 },
 
             ];
 
@@ -278,6 +265,78 @@
         enhance('channel-link')
         enhance('channel-link2')
     </script>
+    <script>
+        var d = new Date();
+	    var weekday = new Array(7);
+	    weekday[0] = "sun";
+	    weekday[1] = "mon";
+	    weekday[2] = "tue";
+	    weekday[3] = "wed";
+	    weekday[4] = "thu";
+	    weekday[5] = "fri";
+	    weekday[6] = "sat";
+
+document.getElementsByClassName(weekday[d.getDay()])[0].classList.add("todaysDay");
+    </script>
+    <script>
+        function extendSector(element) {
+// Get the sector element that contains all the parent and child divs
+const sector = document.getElementsByClassName("sector")[0];
+
+// Add the "sector-extended" class to the sector element to extend its height
+sector.classList.add("sector-extended");
+}
+function shrinkSector() {
+// Get the sector element that contains all the parent and child divs
+const sector = document.getElementsByClassName("sector")[0];
+
+// Remove the "sector-extended" class from the sector element to make it small again
+sector.classList.remove("sector-extended");
+}
+</script>
+<script>
+
+function showHoverText(element, textClass) {
+  // Get the hover element
+  const hoverText = document.querySelector(textClass);
+  hoverText.style.opacity = "1";
+  hoverText.style.transition = "opacity 0.5s ease-in-out"
+
+}
+
+function hideHoverText(textClass) {
+  // Get the hover element
+  const hoverText = document.querySelector(textClass);
+  hoverText.style.opacity = "0";
+  hoverText.style.transition = "opacity 0.1s ease-in-out"
+}
+const div1 = document.getElementById('andre');
+const hoverText = document.querySelector('.hover-text');
+div1.addEventListener('mouseover', () => {
+  showHoverText(div1, '.hover-text');
+});
+div1.addEventListener('mouseout', () => {
+  hideHoverText('.hover-text');
+});
+
+const div2 = document.getElementById('mama');
+const hoverText2 = document.querySelector('.hover-text2');
+div2.addEventListener('mouseover', () => {
+  showHoverText(div2, '.hover-text2');
+});
+div2.addEventListener('mouseout', () => {
+  hideHoverText('.hover-text2');
+});
+const div3 = document.getElementById('robbo');
+const hovertext3 = document.querySelector('.hover-text3');
+div3.addEventListener('mouseover', () => {
+  showHoverText(div3, '.hover-text3');
+});
+div3.addEventListener('mouseout', () => {
+  hideHoverText('.hover-text3');
+});
+
+</script>
 
 </body>
 

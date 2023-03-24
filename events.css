@@ -21,8 +21,7 @@
 }
 
 .einleitung p {
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 1em;
 }
 
 .einleitung h1 {
@@ -44,10 +43,10 @@
     margin: 0;
     font-size: 8rem;
     text-align: center;
-    color: rgba(114, 22, 24, 255)
+    color: rgba(114, 22, 24, 255);
 }
 
-span {
+.line span{
     font-weight: 800;
 }
 
@@ -213,11 +212,11 @@ span {
 .event-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50rem 50rem 50rem;
-    width: 75%;
+    grid-template-rows: 40rem 40rem 40rem;
+    width: 60%;
     margin: 0px auto;
     column-gap: 30px;
-    row-gap: 30px;
+    row-gap: 100px;
     overflow: hidden;
 }
 
@@ -225,32 +224,44 @@ span {
     background-image: url(ENTWURF+kleiner-freitag-30032023-story-1920w.webp);
     max-height: 100%;
     width: 100%;
-    object-fit: contain;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: left;
+}
+#event-bild2 {
+    background-image: url(ENTWURF+kleiner-freitag-30032023-story-1920w.webp);
+    max-height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
 }
 
-.flextext {
+.flextext, .flextext2 {
     display: flex;
-    text-align: center;
     flex-direction: column;
-    justify-content: space-between;
-    line-height: 3rem;
-
+    justify-content: space-evenly;
+    line-height: 2rem;
+    width: 90%;
+    text-align: right;
+}
+.flextext2{
+    text-align: left;
 }
 
-.flextext h1 {
-    font-size: 2.5rem;
+.flextext h1, .flextext2 h1 {
+    font-size: 2.5em;
 }
 
-.flextext span {
+.flextext span, .flextext2 span {
     font-size: 2rem;
 }
 
-.flextext p {
-    font-size: 1.5rem;
+.flextext p, .flextext2 p {
+    font-size: 1rem;
 }
 
-hr {
+#strich-events {
     display: none;
 }
